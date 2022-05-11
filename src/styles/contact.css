@@ -8,11 +8,6 @@
     margin: 0 auto;
 }
 
-.single-container {
-    padding-top: 130px;
-    width: 100%;
-}
-
 .contact {
     display: flex;
     flex-flow: column nowrap;

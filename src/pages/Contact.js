@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import '../styles/pages.css';
-import aboutPic from '../images/profile3bw.png';
 import { MdOutlineMarkEmailRead  } from 'react-icons/md';
 import { IconContext } from 'react-icons';
+import '../styles/pages.css';
 import '../styles/contact.css'
 
 export default function Contact() {

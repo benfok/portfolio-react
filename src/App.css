@@ -11,7 +11,8 @@
   --bodybg: whitesmoke; 
   --primaryfont: #261C15;
   --secondaryfont: grey;
-  --errortext: #EB5E55;
+  --errortext: #C42021;
+  --highlighttext: #157145;
 }
 
 body {

@@ -88,6 +88,7 @@ header {
     /* width: 80px; */
     background: var(--headercolor);
     border: solid 3px var(--headerbg);
+    color: var(--primaryfont);
 }
 
 .btn:hover {

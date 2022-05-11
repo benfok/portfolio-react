@@ -1,0 +1,163 @@
+.portfolio-icon {
+    font-size: 130px;
+    border-radius: 50%;
+    border: solid 10px var(--bodybg);
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    background-color: var(--bodybg);
+    margin: 0 auto;
+}
+
+.portfolio-top {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.work-section {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: left;    
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+/* .column {
+    flex: 1 0 100%;
+    display: flex;
+    flex-flow: column;
+    gap: 4rem;
+} */
+
+.work-card {
+    flex: 1 0 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-description {
+    display: block;
+    padding: 1rem 0 1rem 2rem;
+    text-align: left;
+}
+
+.work-description li {
+    line-height: 1.4;
+}
+
+.work-description ul {
+    padding-bottom: 20px;
+    color: var(--primaryfont);
+    font-size: 90%;
+}
+
+.card-icon {
+    display: none !important;
+}
+
+.work-pic-container {
+    width: 100%;
+    display: flex;
+}
+
+.work-pic {
+    margin: 0 auto;
+    width: 90%; 
+    border: solid 2px var(--primaryfont);
+    height: auto;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2)
+}
+
+figcaption {
+    width: 90%;
+    flex: 1 0 100%;
+    color: var(--primaryfont);
+    padding: 20px 0;
+    font-size: 90%;
+}
+
+h3 {
+    color: var(--primaryfont);
+}
+
+.sub {
+    color: var(--highlighttext);
+    font-size: 90%;
+    padding-bottom: 0.5rem;
+}
+
+.work-btn {
+    font-size: 80%;
+    padding: 5px 1rem;
+    margin-right: 1rem;
+    border: solid 1px var(--headerbg);
+    border-radius: 5px;
+    background-color: var(--headercolor);
+    color: var(--primaryfont)
+}
+
+.work-btn:hover {
+    background-color: var(--headerbg);
+    color: var(--headercolor)
+}
+
+@media screen and (min-width: 576px) {
+
+    .work-section {
+        gap: 2rem;
+    }
+
+   figcaption {
+        padding: 0;
+        position: absolute;
+        bottom: 0;
+        opacity: 0.9;
+        background-color: var(--bodybg);
+        padding: 2rem 2rem;
+        width: 95%;
+        transition: 1s ease;
+        text-align: center;
+    }
+
+    .work-description {
+        display: none;
+    }
+
+    .transparent {
+        opacity: 0;
+        transition: 1s ease;
+        height:auto;
+    }
+
+    .displayed {
+        height: 100%;
+        transition: 1s ease;
+    }
+
+    .work-card:hover figcaption {
+        opacity: 0.95;
+    }
+
+    .work-card:hover .work-pic {
+        opacity: 0.7;
+    }
+
+    .card-icon {
+        position: absolute;
+        top: 0;
+        right: 30px;
+        display: block !important;
+        border: none;
+        border-radius: 50%;
+    }
+
+}

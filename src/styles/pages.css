@@ -1,3 +1,8 @@
+.single-container {
+    padding-top: 130px;
+    width: 100%;
+}
+
 .split-content {
     position: relative;
     width: 100%;
@@ -54,6 +59,8 @@ h1 {
     font-weight: 800;
     padding: 5px 0;
     font-size: 250%;
+    text-align: center;
+    width: 100%;
 }
 
 h3 {
@@ -86,7 +93,7 @@ p {
 
     .container-top {
         height: 40%;
-        margin-bottom: 170px;
+        margin-bottom: 200px;
     }
     
 }
