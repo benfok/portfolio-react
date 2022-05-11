@@ -1,8 +1,4 @@
-.home-content {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: flex-start;
+.split-content {
     position: relative;
     width: 100%;
 }
@@ -10,7 +6,7 @@
 .container-top {
     flex: initial;
     width: 100%;
-    min-height: 30%;
+    min-height: 250px;
     display: flex;
     justify-content: center;
     background-color: var(--headerbg);
@@ -42,8 +38,8 @@
     text-align: center;
     display: flex;
     flex-flow: column;
-    justify-content: center;
-    height: 100%;
+    justify-content: flex-start;
+    margin-bottom: 20px;
 }
 
 .intro p {
@@ -75,6 +71,10 @@ p {
 
     .main-img {
         max-width: 200px;
+    }
+
+    .container-top {
+        margin-bottom: 100px;
     }
 }
 

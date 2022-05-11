@@ -9,7 +9,7 @@ export default function Home() {
   const isMobile = useMedia('(max-width: 998px)');
 
   return (
-    <div className="home-content">
+    <div className="split-content">
       <div className="container-top">
         <img src={profilePic} alt="Headshot of me" className="main-img"></img>
       </div>

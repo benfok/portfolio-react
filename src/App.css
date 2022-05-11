@@ -9,8 +9,9 @@
   --headerbg: #53ACC7;
   --headercolor: white;
   --bodybg: whitesmoke; 
-  --primaryfont: black;
+  --primaryfont: #261C15;
   --secondaryfont: grey;
+  --errortext: #EB5E55;
 }
 
 body {
@@ -25,14 +26,11 @@ body {
   height: auto;
   width: 100%;
   background: var(--bodybg);
-  display: flex;
-  flex-flow: column nowrap;
 }
 
 main {
-  display: flex;
   background-color: var(--bodybg);
-  min-height: calc(100vh - 40px);
+  min-height: calc(100vh - 80px);
 }
 
 a {

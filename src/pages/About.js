@@ -6,7 +6,7 @@ import aboutPic from '../images/profile-skate.JPG';
 export default function About() {
 
   return (
-    <div className="home-content">
+    <div className="split-content">
       <div className="container-top">
         <img src={aboutPic} alt="About Picture" className="main-img"></img>
       </div>
