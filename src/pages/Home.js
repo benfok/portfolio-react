@@ -6,7 +6,7 @@ import Button from '../components/Button'
 
 export default function Home() {
 
-  const isMobile = useMedia('(max-width: 768px)');
+  const isMobile = useMedia('(max-width: 998px)');
 
   return (
     <div className="home-content">

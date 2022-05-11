@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import { usePageContext } from '../../contexts/PageContext';
 
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
 const NavBar = () => {
   
-  const [ currentPage, setCurrentPage ] = useState('Home');
+  const { currentPage, setCurrentPage } = usePageContext();
 
   return (
     <ul className="nav">
@@ -24,7 +25,6 @@ const NavBar = () => {
         <Link
           to="/about"
           onClick={() => setCurrentPage('About')}
-          // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
           className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
         >
           About
@@ -34,7 +34,6 @@ const NavBar = () => {
         <Link
           to="/portfolio"
           onClick={() => setCurrentPage('Portfolio')}
-          // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
           className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
         >
           Portfolio
@@ -44,7 +43,6 @@ const NavBar = () => {
         <Link
           to="/contact"
           onClick={() => setCurrentPage('Contact')}
-          // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
           className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
         >
           Contact

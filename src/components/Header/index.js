@@ -1,12 +1,12 @@
-import { React, useState, useEffect } from 'react';
+import { React, useState } from 'react';
 import NavBar from './NavBar';
 import MobileNavBar from './MobileNavBar';
 import MenuOpenButton from './MenuOpenButton';
 import MenuCloseButton from './MenuCloseButton';
-import useMedia from '../../hooks/useMedia';
-import SocialLinks from '../SocialLinks';
-import '../../styles/header.css';
 import Button from '../Button';
+import useMedia from '../../hooks/useMedia';
+import { PageProvider } from '../../contexts/PageContext';
+import '../../styles/header.css';
 
 
 
@@ -20,23 +20,27 @@ function Header() {
         setOpen(!isOpen)
     }
 
-    const isMobile = useMedia('(max-width: 768px)');
+    // leverage custom hook to determine media size for menu change
+    const isMobile = useMedia('(max-width: 998px)');
 
+    // wrapping the header with the page provider to hold and pass the global state of the current page.
     return (
-        <header>
-            {isOpen && <MobileNavBar toggleMobileNav={toggleMobileNav} />}
-            <div id="header-left">
-                <p id="logo">BF</p>
-            </div>
-            <div id="header-center">
-                {!isMobile && <NavBar />}
-            </div>
-            <div id="header-right">
-                {!isOpen && isMobile && <MenuOpenButton toggleMobileNav={toggleMobileNav} />}
-                {isOpen && <MenuCloseButton toggleMobileNav={toggleMobileNav} />}
-                {!isMobile && <Button src={'#'} text={'Resume'} />}
-            </div>
-        </header>
+        <PageProvider>
+            <header>
+                {isOpen && <MobileNavBar toggleMobileNav={toggleMobileNav} />}
+                <div id="header-left">
+                    <p id="logo">BF</p>
+                </div>
+                <div id="header-center">
+                    {!isMobile && <NavBar />}
+                </div>
+                <div id="header-right">
+                    {!isOpen && isMobile && <MenuOpenButton toggleMobileNav={toggleMobileNav} />}
+                    {isOpen && <MenuCloseButton toggleMobileNav={toggleMobileNav} />}
+                    {!isMobile && <Button src={'#'} text={'Resume'} />}
+                </div>
+            </header>
+        </PageProvider>
     )
 
 }
