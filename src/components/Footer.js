@@ -1,16 +1,15 @@
 import React from 'react';
 import { IconContext } from 'react-icons';
 import SocialLinks from './SocialLinks';
+import '../styles/footer.css';
 
 class Footer extends React.Component {
     render () {
         return (
             <footer>
-                <div>
-                    <IconContext.Provider value={{ color: "red", size: "2em", className: "social-link" }}>
-                        <SocialLinks />
-                    </IconContext.Provider>
-                </div>
+                <IconContext.Provider value={{ className: "social-link" }}>
+                    <SocialLinks />
+                </IconContext.Provider>
                 <p>© Tidy Lines LLC</p>
             </footer>
         )

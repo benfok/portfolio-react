@@ -6,7 +6,7 @@ class SocialLinks extends React.Component {
     render () {
         return (
 
-                <div>
+                <div className="social-container">
                         <a href="https://github.com/benfok/" target="_blank"><FaGithub /></a>
                         <a href="https://www.instagram.com/benfok8/?hl=en" target="_blank"><FaInstagram /></a>
                         <a href="https://www.linkedin.com/in/benfok/" target="_blank"><FaLinkedin /></a>
