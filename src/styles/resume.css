@@ -90,15 +90,3 @@
     }
 
 }
-
-@media screen and (min-width: 2000px) {
-    .icon-wrapper {
-        margin: 15px;
-        padding: 15px;
-        width: 120px;
-    }
-    
-    .language-icon {
-        font-size: 250%;
-    }
-}

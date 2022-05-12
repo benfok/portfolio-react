@@ -28,7 +28,7 @@ footer {
         align-items: flex-start;
         color: var(--headercolor);
         margin-top: 20px;
-        position: absolute;
+        position: fixed;
         bottom: 0;
         padding: 1rem 2rem;
         width: 100%;

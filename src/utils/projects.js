@@ -5,7 +5,7 @@ export const projects = {
             liveLink: 'https://the-happy-place-app.herokuapp.com/',
             repoLink: 'https://github.com/benfok/the-happy-place-forked',
             technologies: 'HTML | CSS | JavaScript | Node.js | Express | MySQL | Handlebars.js',
-            shortDescription: 'Promoting mental wellbeing through a daily journal where users can post publically or privately. Intentionally free of "likes", comments and photos to ensure the focus is on your personal habits and daily gratitudes.',
+            shortDescription: 'Promoting mental wellbeing through a daily journal where users post publically or privately. Intentionally free of "likes", comments and photos to ensure the focus is on personal habits and daily gratitudes.',
             bulletDescription: 
             <ul>
                 <li>Contributed: Back-end Javascript, authentication, webserver config and custom RESTful API routes. Front-end Handlebars rendering and responsive CSS on all pages</li>
@@ -54,10 +54,10 @@ export const projects = {
             shortDescription: 'CMS-style blog site where users can publish their blog posts and comment on others.',
             bulletDescription: 
             <ul>
-                <li>Custom responsive CSS with Handlebars.js to render posts and comments</li>
+                <li>Custom CSS with Handlebars.js to render posts and comments</li>
                 <li>User authentication and sessions</li>
-                <li>Users can Create, Read, Update and Delete posts from the MySQL database</li>
-                <li>Follows MVC architectural structure, deployed on Heroku with JAWSDB</li>
+                <li>Users can Create, Read, Update and Delete posts from MySQL database</li>
+                <li>MVC architectural structure, deployed on Heroku with JAWSDB</li>
             </ul>,  
         },
 
