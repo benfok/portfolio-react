@@ -156,17 +156,22 @@ h3 {
 @media screen and (min-width: 768px) {
     .work-section {
         padding: 0 4rem;
+        align-items: center;
     }
     
     figcaption {
         padding: 4rem 2rem;
+    }
+
+    .work-card {
+        max-width: 700px;
     }
 }
 
 @media screen and (min-width: 1200px) {
    
     .work-section {
-        padding-left: 260px;
+        padding-left: 350px;
         padding-right: 10px;
         flex-flow: row wrap;
         justify-content: flex-start;
@@ -175,7 +180,7 @@ h3 {
     }
 
     .portfolio-h1 {
-        padding-left: 260px;
+        padding-left: 350px;
         text-align: left;
         margin-top: 2rem;
     }
@@ -198,5 +203,16 @@ h3 {
     figcaption {
         width: 100%;
         padding-top: 30px;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+   
+    .work-section {
+        padding-left: 260px;
+    }
+
+    .portfolio-h1 {
+        padding-left: 260px;
     }
 }
