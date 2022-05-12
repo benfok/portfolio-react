@@ -147,10 +147,6 @@ h3 {
         opacity: 0.95;
     }
 
-    .work-card:hover .work-pic {
-        opacity: 0.7;
-    }
-
     .card-icon {
         position: absolute;
         top: 0;

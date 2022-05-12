@@ -10,7 +10,7 @@ const NavBar = () => {
 
   return (
     <ul className="nav">
-      <li className="nav-item">
+      {/* <li className="nav-item">
         <Link
           to="/"
           onClick={() => setCurrentPage('Home')}
@@ -20,10 +20,10 @@ const NavBar = () => {
         >
           Home
         </Link>
-      </li>
+      </li> */}
       <li className="nav-item">
         <Link
-          to="/about"
+          to="/"
           onClick={() => setCurrentPage('About')}
           className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
         >
@@ -46,6 +46,15 @@ const NavBar = () => {
           className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
         >
           Contact
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link
+          to="/resume"
+          onClick={() => setCurrentPage('Resume')}
+          className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+        >
+          Resume
         </Link>
       </li>
     </ul>

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/pages.css';
+import '../styles/pageLayout.css';
 import '../styles/portfolio.css'
 import ProductCard from '../components/ProjectCard';
 import { projects } from '../utils/projects';

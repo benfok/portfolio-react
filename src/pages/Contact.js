@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { MdOutlineMarkEmailRead  } from 'react-icons/md';
 import { IconContext } from 'react-icons';
-import '../styles/pages.css';
+import '../styles/pageLayout.css';
 import '../styles/contact.css'
 
 export default function Contact() {
@@ -36,11 +36,15 @@ export default function Contact() {
 
 
   return (
-      <div className="single-container">
-        <section className="contact">
-          <IconContext.Provider value={{ className: "contact-icon" }}>
+    <div className="split-content">
+      <div className="container-top">
+        <IconContext.Provider value={{ className: "main-icon main-img" }}>
             <MdOutlineMarkEmailRead />
-          </IconContext.Provider>
+        </IconContext.Provider>
+      </div>
+      <div className="container-bottom">
+        <section className="contact">
+
           <h1>Contact Me</h1>
           <form action="mailto:benfok8@gmail.com?subject=Web%20Inquiry" method="post" encType="text/plain">
             <label>Name:</label><br/>
@@ -58,5 +62,6 @@ export default function Contact() {
           </form>
         </section>
       </div>
+    </div>
   );
 }

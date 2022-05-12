@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/pages.css';
+import '../styles/pageLayout.css';
 import profilePic from '../images/profile1.jpg';
 import useMedia from '../hooks/useMedia'
 import Button from '../components/Button'

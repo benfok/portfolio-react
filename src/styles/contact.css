@@ -40,3 +40,31 @@ label {
 .form-btn {
     margin-right: 20px;
 }
+
+@media screen and (min-width: 576px) {
+   
+    .contact {
+        padding: 0 5%;
+    }
+}
+
+@media screen and (min-width: 576px) {
+   
+    .contact {
+        padding: 0 10%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+   
+    .contact {
+        padding-left: 250px;
+        padding-right: 10%;
+    }
+
+    .contact h1 {
+        text-align: left;
+        padding-left: 4rem;
+    }
+
+}

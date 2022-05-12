@@ -33,7 +33,7 @@ header {
 
 #header-center {
     padding: 0;
-    flex-grow: 2;
+    /* flex-grow: 2; use if nav is in center container*/
 }
 
 #header-right {
@@ -41,6 +41,8 @@ header {
     width: 200px;
     display: flex;
     justify-content: flex-end;
+    flex-grow: 2;
+    /* remove flex-grow if nav is moved to center container */
 }
 
 
@@ -59,9 +61,10 @@ header {
 .nav {
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end; 
+    align-items: center;
+    /* convert to justify-content: center if nav is moved to center container */
     width: 100%;
-    margin-right: 10vw;
     font-size: 22px;
 }
 
@@ -135,4 +138,32 @@ header {
     transform: rotate(360deg);
     color: var(--primaryfont);
     cursor: pointer;
+}
+
+
+@media screen and (min-width: 1200px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+    }
+
+    #header-right,
+    #header-center {
+        background-color: var(--bodybg);
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav-link {
+        color: var(--primaryfont);
+    }
+    
+    .nav-link:hover {
+        color: var(--headerbg);
+    }
+    
+    .active {
+        color: var(--headerbg);
+    }
+    
 }

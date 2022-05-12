@@ -18,7 +18,7 @@ const { currentPage, setCurrentPage } = usePageContext();
   return (
     <div className="mobile-nav">
         <ul>
-        <li className="mobile-nav-item">
+        {/* <li className="mobile-nav-item">
             <Link
             to="/"
             onClick={() => closeMenu('Home') }
@@ -26,10 +26,10 @@ const { currentPage, setCurrentPage } = usePageContext();
             >
             Home
             </Link>
-        </li>
+        </li> */}
         <li className="mobile-nav-item">
             <Link
-            to="/about"
+            to="/"
             onClick={() => closeMenu('About')}
             className="nav-link"
             >
@@ -56,8 +56,8 @@ const { currentPage, setCurrentPage } = usePageContext();
         </li>
         <li className="mobile-nav-item">
             <Link
-            to="#"
-            target="_blank"
+            to="/resume"
+            onClick={() => closeMenu('Contact')}
             className="nav-link"
             >
             Resume

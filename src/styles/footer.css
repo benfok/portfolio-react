@@ -22,3 +22,20 @@ footer {
     color: var(--primaryfont);
     cursor: pointer;
 }
+
+@media screen and (min-width: 1200px) {
+    footer {
+        align-items: flex-start;
+        color: var(--headercolor);
+        margin-top: 20px;
+        position: absolute;
+        bottom: 0;
+        padding: 1rem 2rem;
+        width: 100%;
+    }
+
+    .social-link {
+        color: var(--headercolor);
+        margin: 10px 30px 10px 0;
+    }
+}

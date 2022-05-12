@@ -3,7 +3,6 @@ import NavBar from './NavBar';
 import MobileNavBar from './MobileNavBar';
 import MenuOpenButton from './MenuOpenButton';
 import MenuCloseButton from './MenuCloseButton';
-import Button from '../Button';
 import useMedia from '../../hooks/useMedia';
 import { PageProvider } from '../../contexts/PageContext';
 import '../../styles/header.css';
@@ -32,12 +31,13 @@ function Header() {
                     <p id="logo">BF</p>
                 </div>
                 <div id="header-center">
-                    {!isMobile && <NavBar />}
                 </div>
                 <div id="header-right">
+                    {!isMobile && <NavBar />} 
+                    {/* If a desktop function (such as resume button) moves into the right container, move navbar to center */}
                     {!isOpen && isMobile && <MenuOpenButton toggleMobileNav={toggleMobileNav} />}
                     {isOpen && <MenuCloseButton toggleMobileNav={toggleMobileNav} />}
-                    {!isMobile && <Button src={'#'} text={'Resume'} />}
+                    {/* {!isMobile && <Button src={'/resume'} text={'Resume'} />} */}
                 </div>
             </header>
         </PageProvider>
