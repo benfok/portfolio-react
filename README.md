@@ -34,25 +34,20 @@ The website is written as a Single Page Application (SPA) using React Router. As
 ## Screenshots
 Screenshots of the application on desktop and mobile.
 
+### Desktop
 ![Screenshot of home page](./src/images/screenshots/react-portfolio2.png)
 ![Screenshot of portfolio page](./src/images/screenshots/react-portfolio4.png)
 ![Screenshot of contact page](./src/images/screenshots/react-portfolio3.png)
 ![Screenshot of resume page](./src/images/screenshots/react-portfolio1.png)
 
+### Mobile
 <p float="left">
-<img src="./src/images/screenshots/react-portfolio-mobile-1.png" alt="mobile nav" width="200"/>
-<img src="./src/images/screenshots/react-portfolio-mobile-2.png" alt="mobile home" width="200"/>
-<img src="./src/images/screenshots/react-portfolio-mobile-3.png" alt="mobile portfolio" width="200"/>
-<img src="./src/images/screenshots/react-portfolio-mobile-4.png" alt="mobile contact" width="200"/>
-<img src="./src/images/screenshots/react-portfolio-mobile-5.png" alt="mobile resume" width="200"/>
+<img src="./src/images/screenshots/react-portfolio-mobile-1.png" alt="mobile nav" width="160"/>
+<img src="./src/images/screenshots/react-portfolio-mobile-2.png" alt="mobile home" width="160"/>
+<img src="./src/images/screenshots/react-portfolio-mobile-3.png" alt="mobile portfolio" width="160"/>
+<img src="./src/images/screenshots/react-portfolio-mobile-4.png" alt="mobile contact" width="160"/>
+<img src="./src/images/screenshots/react-portfolio-mobile-5.png" alt="mobile resume" width="160"/>
 </p>
-
-![Screenshot of mobile nav](./src/images/screenshots/react-portfolio-mobile-1.png)
-![Screenshot of mobile home page](./src/images/screenshots/react-portfolio-mobile-2.png)
-![Screenshot of mobile portfolio page](./src/images/screenshots/react-portfolio-mobile-3.png)
-![Screenshot of mobile contact page](./src/images/screenshots/react-portfolio-mobile-4.png)
-![Screenshot of mobile resume page](./src/images/screenshots/react-portfolio-mobile-5.png)
-
 
 ## Questions and Links
 Please reach out with any questions regarding the application.
