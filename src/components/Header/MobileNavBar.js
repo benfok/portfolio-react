@@ -29,7 +29,7 @@ const { currentPage, setCurrentPage } = usePageContext();
         </li> */}
         <li className="mobile-nav-item">
             <Link
-            to="/"
+            to="portfolio-react/"
             onClick={() => closeMenu('About')}
             className="nav-link"
             >
@@ -38,7 +38,7 @@ const { currentPage, setCurrentPage } = usePageContext();
         </li>
         <li className="mobile-nav-item">
             <Link
-            to="/portfolio"
+            to="portfolio-react/portfolio"
             onClick={() => closeMenu('Portfolio')}
             className="nav-link"
             >
@@ -47,7 +47,7 @@ const { currentPage, setCurrentPage } = usePageContext();
         </li>
         <li className="mobile-nav-item">
             <Link
-            to="/contact"
+            to="portfolio-react/contact"
             onClick={() => closeMenu('Contact')}
             className="nav-link"
             >
@@ -56,7 +56,7 @@ const { currentPage, setCurrentPage } = usePageContext();
         </li>
         <li className="mobile-nav-item">
             <Link
-            to="/resume"
+            to="portfolio-react/resume"
             onClick={() => closeMenu('Contact')}
             className="nav-link"
             >

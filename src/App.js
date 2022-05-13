@@ -24,19 +24,19 @@ function App() {
                 element={<Home />} 
               /> */}
               <Route 
-                path="/" 
+                path="/portfolio-react/" 
                 element={<About />} 
               />
               <Route 
-                path="/portfolio" 
+                path="portfolio-react/portfolio" 
                 element={<Portfolio />} 
               />
               <Route 
-                path="/contact" 
+                path="portfolio-react/contact" 
                 element={<Contact />} 
               />
               <Route 
-                path="/resume" 
+                path="portfolio-react/resume" 
                 element={<Resume />} 
               />
             </Routes>

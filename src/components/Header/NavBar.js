@@ -23,7 +23,7 @@ const NavBar = () => {
       </li> */}
       <li className="nav-item">
         <Link
-          to="/"
+          to="/portfolio-react"
           onClick={() => setCurrentPage('About')}
           className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
         >
@@ -32,7 +32,7 @@ const NavBar = () => {
       </li>
       <li className="nav-item">
         <Link
-          to="/portfolio"
+          to="portfolio-react/portfolio"
           onClick={() => setCurrentPage('Portfolio')}
           className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
         >
@@ -41,7 +41,7 @@ const NavBar = () => {
       </li>
       <li className="nav-item">
         <Link
-          to="/contact"
+          to="portfolio-react/contact"
           onClick={() => setCurrentPage('Contact')}
           className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
         >
@@ -50,7 +50,7 @@ const NavBar = () => {
       </li>
       <li className="nav-item">
         <Link
-          to="/resume"
+          to="portfolio-react/resume"
           onClick={() => setCurrentPage('Resume')}
           className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
         >
