@@ -46,7 +46,7 @@ export default function Contact() {
         <section className="contact">
 
           <h1>Contact Me</h1>
-          <form action="mailto:benfok8@gmail.com?subject=Web%20Inquiry" method="post" encType="text/plain">
+          <form action="mailto:benfok8@gmail.com?subject=Web%20Inquiry" method="post" encType="text/plain" autoComplete="off">
             <label>Name:</label><br/>
             <input type="text" name="name" className="form-field" required onBlur={checkEmptyName} /><br/>
             {!nameValid && <p className="error">This field is required</p>}
