@@ -1,10 +1,11 @@
 import React from 'react';
 import '../styles/pageLayout.css';
-import resumePic from '../images/profile3bw.png';
 import Button from '../components/Button';
 import { SiHtml5, SiCss3, SiJavascript, SiBootstrap, SiNodedotjs, SiExpress, SiReact, SiHandlebarsdotjs, SiJquery, SiGit, SiMysql, SiMongodb } from 'react-icons/si';
 import LanguageIcon from '../components/LanguageIcon';
 import useMedia from '../hooks/useMedia';
+import resumePic from '../images/profile3bw.png';
+import resume from '../files/resume_FOK_220412.pdf';
 import '../styles/resume.css';
 
 export default function Resume() {
@@ -21,7 +22,7 @@ export default function Resume() {
           <h1>Experience</h1>
           {!isMobile && <p>Full Stack Web Developer <strong>&nbsp;&nbsp;|&nbsp;&nbsp;</strong>  Project Manager <strong>&nbsp;&nbsp;|&nbsp;&nbsp;</strong> Senior Leader <strong>&nbsp;&nbsp;|&nbsp;&nbsp;</strong> Elite Level Educator</p>}
           {isMobile && <p>Full Stack Web Developer<br/>Project Manager<br/>Senior Leader<br/>Elite Level Educator</p>}
-          <Button src={'#'} text={'Resume'} />
+          <Button src={resume} text={'Resume'} />
         </article>
         <section className="skills-container">
             <h2>My Skills</h2>
