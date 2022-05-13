@@ -15,14 +15,12 @@ const { currentPage, setCurrentPage } = usePageContext();
         toggleMobileNav();
     } 
 
-    (function blurContent() {
-        console.log('blur');
-        document.querySelector('main').className = 'isBlurred';
-        document.querySelector('footer').className = 'isBlurred';
+    (function preventScrolling() {
+        document.getElementById('react-content-container').className = 'isFixed container';
     })();
 
   return (
-    <div className="mobile-nav" >
+    <div className="mobile-nav">
         <ul>
         {/* <li className="mobile-nav-item">
             <Link
@@ -76,7 +74,8 @@ const { currentPage, setCurrentPage } = usePageContext();
             </IconContext.Provider>
         </div>
     </div>
+    
   );
-}
+};
 
 export default MobileNavBar;

@@ -1,4 +1,4 @@
-import { React, useState } from 'react';
+import React, { useState } from 'react';
 import NavBar from './NavBar';
 import MobileNavBar from './MobileNavBar';
 import MenuOpenButton from './MenuOpenButton';
@@ -16,9 +16,8 @@ function Header() {
 
     // function to toggle state of mobile menu
     const toggleMobileNav = () => {
-        // removes blur from elements
-        document.querySelector('main').className = '';
-        document.querySelector('footer').className = '';
+        // removes fixed from body and allows scrolling again
+        document.getElementById('react-content-container').className = 'container';
         setOpen(!isOpen)
     }
 

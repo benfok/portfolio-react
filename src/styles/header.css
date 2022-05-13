@@ -8,6 +8,7 @@ header {
     justify-content: space-between;
     align-items: center;
     position: absolute;
+    top: 0;
     z-index: 1;
 }
 
@@ -109,7 +110,7 @@ header {
     top: 80px;
     left: 0;
     padding: 2rem 4rem;
-    z-index: 3;
+    z-index: 2;
 }
 
 .mobile-nav-item {

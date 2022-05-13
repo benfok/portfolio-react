@@ -15,7 +15,7 @@ import Footer from './components/Footer';
 function App() {
   return (
       <Router basename="/portfolio-react">
-        <div className='container'>
+        <div id="react-content-container" className="container">
           <Header />
           <main>
             <Routes>
