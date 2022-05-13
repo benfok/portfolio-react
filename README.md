@@ -38,6 +38,13 @@ Screenshots of the application on desktop and mobile.
 ![Screenshot of portfolio page](./src/images/screenshots/react-portfolio4.png)
 ![Screenshot of contact page](./src/images/screenshots/react-portfolio3.png)
 ![Screenshot of resume page](./src/images/screenshots/react-portfolio1.png)
+
+<img src="./src/images/screenshots/react-portfolio-mobile-1.png" alt="mobile nav" width="200px"/>
+<img src="./src/images/screenshots/react-portfolio-mobile-2.png" alt="mobile home" width="200px"/>
+<img src="./src/images/screenshots/react-portfolio-mobile-3.png" alt="mobile portfolio" width="200px"/>
+<img src="./src/images/screenshots/react-portfolio-mobile-4.png" alt="mobile contact" width="200px"/>
+<img src="./src/images/screenshots/react-portfolio-mobile-5.png" alt="mobile resume" width="200px"/>
+
 ![Screenshot of mobile nav](./src/images/screenshots/react-portfolio-mobile-1.png)
 ![Screenshot of mobile home page](./src/images/screenshots/react-portfolio-mobile-2.png)
 ![Screenshot of mobile portfolio page](./src/images/screenshots/react-portfolio-mobile-3.png)
