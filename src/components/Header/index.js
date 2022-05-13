@@ -16,6 +16,9 @@ function Header() {
 
     // function to toggle state of mobile menu
     const toggleMobileNav = () => {
+        // removes blur from elements
+        document.querySelector('main').className = '';
+        document.querySelector('footer').className = '';
         setOpen(!isOpen)
     }
 

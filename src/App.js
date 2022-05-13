@@ -40,7 +40,7 @@ function App() {
                 element={<Resume />} 
               />
               <Route 
-                path="/*" 
+                path="*" 
                 element={<About />} 
               />
             </Routes>
