@@ -1,83 +1,67 @@
 # portfolio-react
 
 ## Description
-A full responsive portfolio site written entirely in ReactJS and built to showcase React functionality as well as being a professional portfolio. Highlights the use of built-in and custom hooks and context to manage state and effect.
+A fully responsive portfolio site written entirely in ReactJS and built to showcase React functionality as well as being a professional portfolio. Highlights the use of built-in and custom hooks and context to manage state and effect.
 
 <details>
 <summary><strong>Table of Contents</strong></summary>
 
-- [Installation](#installation)
-- [Usage](#usage)
+- [Functionality Notes](#functionality-notes)
 - [License](#license)
-- [Contributing Guidelines](#contributing-guidelines)
-- [Tests](#tests)
-- [Languages, Skills and Credits](#languages-skills-and-credits)
+- [Languages Used](#languages-used)
 - [Screenshots](#screenshots)
 - [Questions and Links](#questions-and-links)
 - [Details and Learnings](#details-and-learnings)
 </details>
 
-## Installation
-### Local Installation
-- Clone the repo.
-- Navigate to the folder and run `npm init` followed by `npm install` in order to install the dependencies.
-- Use the command `npm run start` to start the application locally.
-- The server is pointed to http://localhost:3000/portfolio-react.
-- Use the command `npm run deploy` to run the build scripts and 
 
-## Usage
-The Text Editor works by accepting any text as input, and then saving all input as a string each time the editor (browser window) loses focus. When the application is launched or refreshed, the latest data is rendered to the screen. 
+## Functionality Notes
+The website is written as a Single Page Application (SPA) using React Router. As a result, I needed to handle redirecting 404 page errors caused by a hard page refresh of any sub pages in order to avoid the user hitting a 404 page. As the site is hosted entirely on the client side with no server, the Contact Me form directs to a mailto: link and fires the local email client. 
+
 
 ## License
-Distributed under the **MIT** license.
+© Tidy Lines LLC
 
-## Contributing Guidelines
-Contributions help our open source community to continue to evolve, and any contributions are greatly appreciated. If you have a suggestion that would improve this code please follow the directions below. I require that any and all changes adhere to the Code of Conduct outlined in the [Contributor Covenant](https://www.contributor-covenant.org/).
 
- - Fork the repo
- - Create your feature branch
- - Commit your changes
- - Push the branch and open a pull request
-
-> _**Note:** Any contributions are understood to be under the same MIT that covers the project. If this is a concern please contact me._
-
-## Tests
-There are currently no tests written for this application.
-
-## Languages, Skills and Credits
-- JavaScript
-- Node.js
+## Languages Used
+- JavaScript/CSS/HTML
+- ReactJS
 - Dependencies:
-    - [express](https://www.npmjs.com/package/express) as a web framework for Node.js.
-    - [concurrently](https://www.npmjs.com/package/concurrently) enables multiple command line scripts to be executed at once
-    - [webpack](https://www.npmjs.com/package/webpack) the application pulls in webpack as a bundler and multiple supporting modules such as:
-        - babel: For transpiling and ES6 backwards compatibility 
-        - html-webpack-plugin: For generation of a client side index.html file with relative links to scripts and styles
-        - css-loader and style-loader: For bundling CSS with JS
-        - webpack-pwa-manifest: For creation of the PWA manifest file
-        - workbox-webpack-plugin: For Service Worker functionality to cache assets 
+    - [create-react-app](https://create-react-app.dev/) complete initializer for ReactJS providing starter code, build dependencies and file structure
+    - [gh-pages](https://www.npmjs.com/package/gh-pages) module to publish files to alternative branch on GitHub in order to host app as a client side SPA
+
 
 ## Screenshots
-here is a screenshot of the application installed locally
+Screenshots of the application on desktop and mobile.
 
-![Screenshot of application isntalled locally](./client/src/images/screenshot-local.png)
+![Screenshot of home page](./src/images/screenshots/react-portfolio2.png)
+![Screenshot of portfolio page](./src/images/screenshots/react-portfolio4.png)
+![Screenshot of contact page](./src/images/screenshots/react-portfolio3.png)
+![Screenshot of resume page](./src/images/screenshots/react-portfolio1.png)
+![Screenshot of mobile nav](./src/images/screenshots/react-portfolio-mobile-1.png)
+![Screenshot of mobile home page](./src/images/screenshots/react-portfolio-mobile-2.png)
+![Screenshot of mobile portfolio page](./src/images/screenshots/react-portfolio-mobile-3.png)
+![Screenshot of mobile contact page](./src/images/screenshots/react-portfolio-mobile-4.png)
+![Screenshot of mobile resume page](./src/images/screenshots/react-portfolio-mobile-5.png)
+
 
 ## Questions and Links
 Please reach out with any questions regarding the application.
 
-View the deployed application on [Heroku](https://text-editor-tl.herokuapp.com/)
+View the deployed application on [Heroku](https://benfok.github.io/portfolio-react/)
 
-View the repository in [GitHub](https://github.com/benfok/pwa-text-editor)
+View the repository in [GitHub](https://github.com/benfok)
+
 
 ## Details and Learnings
-- This was a challenging application to build as while the dependencies helped make some code syntax simplier, they made troubleshooting much more difficult.
-- On initial load the application first checks for existing data within IndexedDB, then localStorage and then if neither, displays the default header artwork.
-- Images, the home page, scripts and styles are cached to improve performance and for offline use. 
-- Added css rules to remove the Install button if the application was being viewed in `display: standalone` (i.e. installed) and also to override the default CodeMirror wondow sizing to ensure the viewable code window takes up the full viewport height.
+- I designed the application to be fully responsive across devices. This can be tested by inspecting the site and changing the screen width. State needed to be managed at the global level in order to be maintained as mobile and desktop elements toggled.
+- Created a custom hook useMedia to listen for and track screen widths in order to alter the navigation display (mobile vs desktop) as well as other responsive elements.
+- Leveraged the global context to store the value of the current page so that state persisted regardless of whether the mobile or the desktop navigation element was triggered.
+- As the application is written as a SPA I needed to add functionality to handle a hard refresh on a sub page to avoid hitting a 404 error in the browser. This involved adding a 404.html page to the build folder and a script to the index.html file to redirect back to the instance of the current page. Credit to [rafgraph](https://github.com/rafgraph/spa-github-pages) for this solution.
+- The mobile nav menu initially caused some challenges on pages that were taller than 100vh. I solved this by disabling background scrolling when the mobile nav is open using useState.
+- Future enhancements include:
+    - Adding a Node.js backend to handle email sends and avoid the use of a mailto: link within the contact form
+    - Adding Services section and expanding on Education and Experience
+    - Adding a theme toggle to highlight additional functionality
 
-- call out 404 page work
-- useMedia hook
-- page context to work across both navs
-- fully responsive
-- single page application technically. uses react router to move between pages - then 404 trick
  
