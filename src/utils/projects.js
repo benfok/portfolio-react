@@ -31,6 +31,20 @@ export const projects = {
             </ul>,  
         },
 
+    textEditor: {
+            title: 'Text Editor (PWA)',
+            liveLink: 'https://text-editor-tl.herokuapp.com/',
+            repoLink: 'https://github.com/benfok/pwa-text-editor',
+            technologies: 'JavaScript | Node.js | Express | Webpack',
+            shortDescription: 'A simple Text Editor written and deployed as an installable Progressive Web Application',
+            bulletDescription:
+            <ul>
+                <li>Leverages webpack as a bundler and transpiler</li>
+                <li>Service worker caches assets for offline use as stores data in the browser (indexedDB with localStorage as back-up)</li>
+                <li>Text Editor styled using CodeMirror</li>
+            </ul>,  
+        },
+
     codeQuiz: {
             title: 'Code Quiz',
             liveLink: 'https://benfok.github.io/code-quiz/',
@@ -58,6 +72,21 @@ export const projects = {
                 <li>User authentication and sessions</li>
                 <li>Users can Create, Read, Update and Delete posts from MySQL database</li>
                 <li>MVC architectural structure, deployed on Heroku with JAWSDB</li>
+            </ul>,  
+        },
+
+    weatherDashboard: {
+            title: 'Weather Dashboard',
+            liveLink: 'https://benfok.github.io/weather-dashboard/',
+            repoLink: 'https://github.com/benfok/weather-dashboard',
+            technologies: 'HTML | CSS | JavaScript | APIs',
+            shortDescription: 'Weather app to view current and 5 day forecast anywhere worldwide.',
+            bulletDescription: 
+            <ul>
+                <li>Integrated OpenWeather API</li>
+                <li>Dynamic and responsive custom CSS</li>
+                <li>Working with timezone offsets</li>
+                <li>Browser storage used to save search history</li>
             </ul>,  
         },
 

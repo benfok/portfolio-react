@@ -9,8 +9,10 @@ import { IconContext } from 'react-icons';
 //import pics
 import happyPlacePic from '../images/happy-place1.png';
 import pubCrawlerPic from '../images/pubcrawler.png';
+import textEditorPic from '../images/text-editor.png';
 import codeQuizPic from '../images/code_quiz.png';
 import techBlogPic from '../images/tech-blog1.png';
+import weatherDashPic from '../images/weather-dashboard3.png';
 
 export default function Portfolio() {
   return (
@@ -25,8 +27,10 @@ export default function Portfolio() {
         <section className="work-section">
             <ProductCard project={projects.theHappyPlace} imageSrc={happyPlacePic}/>
             <ProductCard project={projects.pubCrawler} imageSrc={pubCrawlerPic}/>
+            <ProductCard project={projects.textEditor} imageSrc={textEditorPic}/>
             <ProductCard project={projects.codeQuiz} imageSrc={codeQuizPic}/>
             <ProductCard project={projects.techBlog} imageSrc={techBlogPic}/>
+            <ProductCard project={projects.weatherDashboard} imageSrc={weatherDashPic}/>
         </section>
       </div>
     </div>

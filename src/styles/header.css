@@ -109,6 +109,7 @@ header {
     top: 80px;
     left: 0;
     padding: 2rem 4rem;
+    z-index: 3;
 }
 
 .mobile-nav-item {
