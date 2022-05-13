@@ -14,7 +14,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-      <Router>
+      <Router basename="/portfolio-react">
         <div className='container'>
           <Header />
           <main>
@@ -24,20 +24,24 @@ function App() {
                 element={<Home />} 
               /> */}
               <Route 
-                path="/portfolio-react/" 
+                path="/" 
                 element={<About />} 
               />
               <Route 
-                path="portfolio-react/portfolio" 
+                path="/portfolio" 
                 element={<Portfolio />} 
               />
               <Route 
-                path="portfolio-react/contact" 
+                path="/contact" 
                 element={<Contact />} 
               />
               <Route 
-                path="portfolio-react/resume" 
+                path="/resume" 
                 element={<Resume />} 
+              />
+              <Route 
+                path="/*" 
+                element={<About />} 
               />
             </Routes>
           </main>
