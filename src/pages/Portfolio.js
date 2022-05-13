@@ -23,15 +23,17 @@ export default function Portfolio() {
         </IconContext.Provider>
       </div>
       <div className="container-bottom">
-        <h1 className="portfolio-h1">My Work</h1>
-        <section className="work-section">
-            <ProductCard project={projects.theHappyPlace} imageSrc={happyPlacePic}/>
-            <ProductCard project={projects.pubCrawler} imageSrc={pubCrawlerPic}/>
-            <ProductCard project={projects.textEditor} imageSrc={textEditorPic}/>
-            <ProductCard project={projects.codeQuiz} imageSrc={codeQuizPic}/>
-            <ProductCard project={projects.techBlog} imageSrc={techBlogPic}/>
-            <ProductCard project={projects.weatherDashboard} imageSrc={weatherDashPic}/>
-        </section>
+        <div className="portfolio-container">
+          <h1 className="portfolio-h1">My Work</h1>
+          <section className="work-section">
+              <ProductCard project={projects.theHappyPlace} imageSrc={happyPlacePic}/>
+              <ProductCard project={projects.pubCrawler} imageSrc={pubCrawlerPic}/>
+              <ProductCard project={projects.textEditor} imageSrc={textEditorPic}/>
+              <ProductCard project={projects.codeQuiz} imageSrc={codeQuizPic}/>
+              <ProductCard project={projects.techBlog} imageSrc={techBlogPic}/>
+              <ProductCard project={projects.weatherDashboard} imageSrc={weatherDashPic}/>
+          </section>
+        </div>
       </div>
     </div>
   );

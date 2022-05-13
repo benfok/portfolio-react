@@ -154,11 +154,7 @@ h3 {
 }
 
 @media screen and (min-width: 768px) {
-    .work-section {
-        padding: 0 4rem;
-        align-items: center;
-    }
-    
+
     figcaption {
         padding: 4rem 2rem;
     }
@@ -170,8 +166,12 @@ h3 {
 
 @media screen and (min-width: 1200px) {
    
-    .work-section {
+    .portfolio-container {
+        margin-top: 130px;
         padding-left: 350px;
+    }
+
+    .work-section {
         padding-right: 10px;
         flex-flow: row wrap;
         justify-content: flex-start;
@@ -180,9 +180,7 @@ h3 {
     }
 
     .portfolio-h1 {
-        padding-left: 350px;
         text-align: left;
-        margin-top: 2rem;
     }
 
     .work-card {

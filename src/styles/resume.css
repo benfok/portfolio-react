@@ -60,8 +60,7 @@
 @media screen and (min-width: 1200px) {
    
     .intro-resume {
-        padding-left: 250px;
-        padding-right: 50px;
+        padding: 80px 50px 0 250px;
         text-align: left;
         font-size: 110%;
         align-items: flex-start;
