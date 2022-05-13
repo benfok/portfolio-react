@@ -206,11 +206,8 @@ h3 {
 
 @media screen and (min-width: 1700px) {
    
-    .work-section {
-        padding-left: 260px;
-    }
-
-    .portfolio-h1 {
+    .portfolio-container {
+        margin-top: 130px;
         padding-left: 260px;
     }
 }
