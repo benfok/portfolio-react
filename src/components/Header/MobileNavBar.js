@@ -12,7 +12,6 @@ const { currentPage, setCurrentPage } = usePageContext();
 
     const closeMenu = page => {
         setCurrentPage(page);
-        removeBlur();
         toggleMobileNav();
     } 
 
@@ -21,11 +20,6 @@ const { currentPage, setCurrentPage } = usePageContext();
         document.querySelector('main').className = 'isBlurred';
         document.querySelector('footer').className = 'isBlurred';
     })();
-
-    const removeBlur = () => {
-        document.querySelector('main').className = '';
-        document.querySelector('footer').className = '';
-    }
 
   return (
     <div className="mobile-nav" >
