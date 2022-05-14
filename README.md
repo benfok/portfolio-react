@@ -52,7 +52,7 @@ Screenshots of the application on desktop and mobile.
 ## Questions and Links
 Please reach out with any questions regarding the application.
 
-View the deployed application on [Heroku](https://benfok.github.io/portfolio-react/)
+View the deployed application on [GitHub Pages](https://benfok.github.io/portfolio-react/)
 
 View the repository in [GitHub](https://github.com/benfok)
 
