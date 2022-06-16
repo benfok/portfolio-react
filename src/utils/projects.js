@@ -1,5 +1,21 @@
 export const projects = {
         
+    ethel: {
+        title: 'Ethel',
+        liveLink: 'https://ethel-notes.herokuapp.com/',
+        repoLink: 'https://github.com/benfok/Ethel',
+        technologies: 'React | HTML | CSS | JavaScript | Node.js | Express | MongoDB | Apollo/GraphQL',
+        shortDescription: 'List making and note taking app that allows lists to be shared with other users and updated in real-time',
+        bulletDescription: 
+        <ul>
+            <li>Contributed: All code except some CSS and DB models</li>
+            <li>All CRUD operations leverage GraphQL</li>
+            <li>Uses JWT for user authentication</li>
+            <li>Users can share lists by searching for users or through their shared history. Shared lists can be refreshed to see real-time data</li>
+            <li>Lists can be actioned on independantly and simultaneously</li>
+        </ul>,  
+    },
+
     theHappyPlace: {
             title: 'The Happy Place',
             liveLink: 'https://the-happy-place-app.herokuapp.com/',
@@ -36,7 +52,7 @@ export const projects = {
             liveLink: 'https://text-editor-tl.herokuapp.com/',
             repoLink: 'https://github.com/benfok/pwa-text-editor',
             technologies: 'JavaScript | Node.js | Express | Webpack',
-            shortDescription: 'A simple Text Editor written and deployed as an installable Progressive Web Application',
+            shortDescription: 'A simple Text Editor deployed as an installable Progressive Web Application',
             bulletDescription:
             <ul>
                 <li>Leverages webpack as a bundler and transpiler</li>

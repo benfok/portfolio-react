@@ -17,7 +17,7 @@ export default function Contact() {
   }
 
   const checkEmail = (e) => {
-    if (!/^([a-zA-Z0-9.!#$%&*+=?^_{|}~\/-]+)@([\w.-]+)\.([a-z.]{2,6})$/.test(e.target.value)) {
+    if (!/^([a-zA-Z0-9.!#$%&*+=?^_{|}~/-]+)@([\w.-]+)\.([a-z.]{2,6})$/.test(e.target.value)) {
       setEmailValid(false)
     } else { setEmailValid(true) }
   }

@@ -13,6 +13,7 @@ import textEditorPic from '../images/text-editor.png';
 import codeQuizPic from '../images/code_quiz.png';
 import techBlogPic from '../images/tech-blog1.png';
 import weatherDashPic from '../images/weather-dashboard3.png';
+import ethelPic from '../images/ethel-portfolio3.png';
 
 export default function Portfolio() {
   return (
@@ -26,6 +27,7 @@ export default function Portfolio() {
         <div className="portfolio-container">
           <h1 className="portfolio-h1">My Work</h1>
           <section className="work-section">
+              <ProductCard project={projects.ethel} imageSrc={ethelPic}/>
               <ProductCard project={projects.theHappyPlace} imageSrc={happyPlacePic}/>
               <ProductCard project={projects.pubCrawler} imageSrc={pubCrawlerPic}/>
               <ProductCard project={projects.textEditor} imageSrc={textEditorPic}/>

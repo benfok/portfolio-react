@@ -168,14 +168,14 @@ h3 {
    
     .portfolio-container {
         margin-top: 130px;
-        padding-left: 350px;
+        padding-left: 330px;
     }
 
     .work-section {
-        padding-right: 10px;
+        padding-right: 50px;
         flex-flow: row wrap;
         justify-content: flex-start;
-        align-items: flex-start;
+        align-items: center;
         margin-top: 2rem;
     }
 
@@ -185,7 +185,7 @@ h3 {
 
     .work-card {
         align-items: flex-start;
-        max-width: 500px;
+        max-width: 650px;
     }
 
     .work-pic-container {
@@ -195,7 +195,7 @@ h3 {
     .work-pic {
         margin: 0;
         width: 100%;
-        object-position: 0 0;
+        object-position: 50% 0;
     }
 
     figcaption {
@@ -209,5 +209,18 @@ h3 {
     .portfolio-container {
         margin-top: 130px;
         padding-left: 260px;
+    }
+
+    .work-section {
+        padding-right: 10px;
+    }
+
+    .work-card {
+        max-width: 550px;
+        height: auto;
+    }
+
+    .work-pic-container {
+        height: auto;
     }
 }
