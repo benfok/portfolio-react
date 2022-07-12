@@ -37,6 +37,10 @@ label {
     color: var(--errortext);
 }
 
+.success {
+    color: var(--highlighttext);
+}
+
 .form-btn {
     margin-right: 20px;
 }
