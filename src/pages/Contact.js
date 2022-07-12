@@ -20,7 +20,6 @@ export default function Contact() {
   };
 
   const validate = () => {
-    console.log(formState);
     if (!formState.userName || formState.userName.length < 1 ) {
       setErrorMessage('Name is a required field')
       return false

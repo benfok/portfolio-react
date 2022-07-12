@@ -20,7 +20,7 @@ export default function Resume() {
       <div className="container-bottom">
         <article className='intro-resume'>
           <h1>Experience</h1>
-          {!isMobile && <p>Full Stack Web Developer <strong>&nbsp;&nbsp;|&nbsp;&nbsp;</strong>  Project Manager <strong>&nbsp;&nbsp;|&nbsp;&nbsp;</strong> Senior Leader <strong>&nbsp;&nbsp;|&nbsp;&nbsp;</strong> Elite Level Educator</p>}
+          {!isMobile && <p>Full Stack Web Developer <strong>&nbsp;&nbsp;|&nbsp;&nbsp;</strong>  Project Manager <strong>&nbsp;&nbsp;|&nbsp;&nbsp;</strong> Senior Leader <strong>&nbsp;&nbsp;|&nbsp;&nbsp;</strong> Master Educator</p>}
           {isMobile && <p>Full Stack Web Developer<br/>Project Manager<br/>Senior Leader<br/>Master Educator</p>}
           <Button src={resume} text={'Resume'} />
         </article>
