@@ -21,6 +21,7 @@
     flex-flow: column;
     align-items: center;
     justify-content: flex-end;
+    z-index: 1;
 }
 
 .main-img {
@@ -118,6 +119,9 @@ p {
         width: 100%;
         display: flex;
         justify-content: center;
+        align-items: flex-start;
+        padding-bottom: 50px;
+        padding-right: 10px;
     }
 
     .main-img {

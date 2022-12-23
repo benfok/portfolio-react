@@ -6,7 +6,7 @@
     width: 100%;
     text-align: left;    
     gap: 4rem;
-    margin: 4rem 0;
+    margin: 2rem 0;
 }
 
 /* .column {
@@ -28,6 +28,7 @@
     display: block;
     padding: 1rem 0 1rem 2rem;
     text-align: left;
+    transition: text-align 7s ease-in-out;
 }
 
 .work-description li {
@@ -48,7 +49,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    height: 300px;
+    max-height: 400px;
 }
 
 .work-pic {
@@ -59,6 +60,7 @@
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
     object-fit: cover;
     object-position: 50% 0;
+    border-radius: 5px;
 }
 
 figcaption {
@@ -83,18 +85,44 @@ h3 {
     font-size: 80%;
     padding: 5px 1rem;
     margin-right: 1rem;
-    border: solid 1px var(--headerbg);
+    border: solid 1px var(--btnborder);
     border-radius: 5px;
-    background-color: var(--headercolor);
-    color: var(--primaryfont)
+    background-color: var(--btnbg);
+    color: var(--primaryfont);
+    display: inline-block;
 }
 
 .work-btn:hover {
-    background-color: var(--headerbg);
-    color: var(--headercolor)
+    background-color: var(--btnbghover);
+    color: var(--secondaryfont);
+    cursor: pointer;
 }
 
-@media screen and (min-width: 576px) {
+.work-btn-disabled:hover {
+    cursor: default;
+    background-color: var(--btnbg);
+    color: var(--primaryfont);
+}
+
+@media screen and (min-width: 768px) {
+
+    .work-pic-container {
+        max-height: 450px;
+    }
+
+    .work-card {
+        max-width: 720px;
+        padding: 40px 20px;
+        border: 1px solid var(--cardbg);;
+        border-radius: 10px;
+        background-color: var(--cardbg);
+        box-shadow: 0px 2px 20px 0px rgb(0 0 0 / 20%);
+    }
+
+}
+
+
+@media screen and (min-width: 1200px) {
 
     .work-section {
         gap: 2rem;
@@ -105,16 +133,15 @@ h3 {
     }
 
    figcaption {
-        padding: 0;
-        position: absolute;
-        bottom: 0;
-        opacity: 0.9;
-        background-color: var(--bodybg);
+        /* position: absolute; */
+        /* bottom: 0; */
+        /* opacity: 0.9; */
+        /* background-color: var(--bodybg); */
         padding: 2rem 1rem;
         width: 90%;
         transition: 1s ease;
         text-align: center;
-        border: solid 1px var(--secondaryfont);
+        /* border: solid 1px var(--secondaryfont); */
     }
 
     .work-description {
@@ -123,7 +150,7 @@ h3 {
     }
 
     .transparent {
-        opacity: 0;
+        /* opacity: 0; */
         transition: 1s ease;
         height:auto;
     }
@@ -133,51 +160,55 @@ h3 {
         transition: 1s ease;
     }
 
-    .work-card:hover figcaption {
+    /* .work-card:hover figcaption {
         opacity: 0.95;
-    }
+    } */
 
     .card-icon {
         position: absolute;
-        top: 0;
-        right: 30px;
+        bottom: -20px;
+        left: calc(50% - 18px);
         display: block !important;
         border: none;
         border-radius: 50%;
         color: var(--primaryfont) !important;
+        box-shadow: none;
+        text-decoration: none;
+        transition: transform .7s ease-in-out;
+        font-size: 2em;
+        background: none;
+        height: 36px;
     }
 
     .card-icon:hover {
-        color: var(--headerbg) !important; 
+        color: var(--btnbghover) !important; 
+        cursor: pointer;
+        transform: rotate(360deg);
     }
-
 }
-
+/* 
 @media screen and (min-width: 768px) {
 
     figcaption {
         padding: 4rem 2rem;
     }
 
-    .work-card {
-        max-width: 700px;
-    }
-}
+} */
 
 @media screen and (min-width: 1200px) {
    
     .portfolio-container {
         margin-top: 130px;
-        padding-left: 330px;
+        padding-left: 280px;
     }
 
-    .work-section {
+    /* .work-section {
         padding-right: 50px;
         flex-flow: row wrap;
         justify-content: flex-start;
-        align-items: center;
+        align-items:flex-start;
         margin-top: 2rem;
-    }
+    } */
 
     .portfolio-h1 {
         text-align: left;
@@ -185,7 +216,8 @@ h3 {
 
     .work-card {
         align-items: flex-start;
-        max-width: 650px;
+        max-width: 700px;
+        padding: 40px;
     }
 
     .work-pic-container {
@@ -208,19 +240,25 @@ h3 {
    
     .portfolio-container {
         margin-top: 130px;
-        padding-left: 260px;
+        padding-left: 250px;
     }
 
-    .work-section {
-        padding-right: 10px;
+    .work-section-wide {
+        display: flex;
+        flex-flow: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 2rem;
     }
 
     .work-card {
-        max-width: 550px;
+        max-width: 560px;
+        padding: 20px 20px 40px 20px;
         height: auto;
     }
 
     .work-pic-container {
         height: auto;
+        max-height: 350px;
     }
 }

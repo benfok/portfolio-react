@@ -1,7 +1,24 @@
 export const projects = {
+
+    vailMock: {
+        title: 'Vail Resorts Clone',
+        live: true,
+        liveLink: 'https://benfok.github.io/product-store',
+        repoLink: 'https://github.com/benfok/product-store',
+        technologies: 'React | HTML | CSS | JavaScript',
+        shortDescription: `Mock page to mimic Vail Resort's ecommerce template for selling ski and snowboard lessons and to showcase potential enhancements.`,
+        bulletDescription: 
+        <ul>
+            <li>Coded from scratch to mimic Vail's design template and components</li>
+            <li>Simulates an ecommerce store showing product availability within a 7 day window</li>
+            <li>Offers users the option to filter and sort products in numoerous ways, as well as add products to a comparison view</li>
+            <li>Uses modals for detailed info, add-ons and add-to-cart functionality for a single page experience</li>
+        </ul>,  
+    },
         
     ethel: {
         title: 'Ethel',
+        live: false,
         liveLink: 'https://ethel-notes.herokuapp.com/',
         repoLink: 'https://github.com/benfok/Ethel',
         technologies: 'React | HTML | CSS | JavaScript | Node.js | Express | MongoDB | Apollo/GraphQL',
@@ -18,7 +35,8 @@ export const projects = {
 
     theHappyPlace: {
             title: 'The Happy Place',
-            liveLink: 'https://the-happy-place-app.herokuapp.com/',
+            live: true,
+            liveLink: 'https://happy-place.cyclic.app/',
             repoLink: 'https://github.com/benfok/the-happy-place-forked',
             technologies: 'HTML | CSS | JavaScript | Node.js | Express | MySQL | Handlebars.js',
             shortDescription: 'Promoting mental wellbeing through a daily journal where users post publically or privately. Intentionally free of "likes", comments and photos to ensure the focus is on personal habits and daily gratitudes.',
@@ -34,6 +52,7 @@ export const projects = {
 
     pubCrawler: {
             title: 'PubCrawler',
+            live: true,
             liveLink: 'https://benfok.github.io/pub-crawler/',
             repoLink: 'https://github.com/benfok/pub-crawler',
             technologies: 'HTML | CSS | JavaScript | APIs',
@@ -49,6 +68,7 @@ export const projects = {
 
     textEditor: {
             title: 'Text Editor (PWA)',
+            live: false,
             liveLink: 'https://text-editor-tl.herokuapp.com/',
             repoLink: 'https://github.com/benfok/pwa-text-editor',
             technologies: 'JavaScript | Node.js | Express | Webpack',
@@ -63,6 +83,7 @@ export const projects = {
 
     codeQuiz: {
             title: 'Code Quiz',
+            live: true,
             liveLink: 'https://benfok.github.io/code-quiz/',
             repoLink: 'https://github.com/benfok/code-quiz',
             technologies: 'HTML | CSS | JavaScript | localStorage',
@@ -78,7 +99,8 @@ export const projects = {
 
     techBlog: {
             title: 'Tech Blog',
-            liveLink: 'https://tech-blog-tl.herokuapp.com/',
+            live: true,
+            liveLink: 'https://tech-blog.cyclic.app',
             repoLink: 'https://github.com/benfok/tech-blog',
             technologies: 'HTML | CSS | JavaScript | Node.js | Express | MySQL | Handlebars.js',
             shortDescription: 'CMS-style blog site where users can publish their blog posts and comment on others.',
@@ -93,6 +115,7 @@ export const projects = {
 
     weatherDashboard: {
             title: 'Weather Dashboard',
+            live: true,
             liveLink: 'https://benfok.github.io/weather-dashboard/',
             repoLink: 'https://github.com/benfok/weather-dashboard',
             technologies: 'HTML | CSS | JavaScript | APIs',

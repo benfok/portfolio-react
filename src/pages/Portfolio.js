@@ -5,6 +5,7 @@ import ProductCard from '../components/ProjectCard';
 import { projects } from '../utils/projects';
 import { FaCode } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
+import useMedia from '../hooks/useMedia';
 
 //import pics
 import happyPlacePic from '../images/happy-place1.png';
@@ -14,8 +15,13 @@ import codeQuizPic from '../images/code_quiz.png';
 import techBlogPic from '../images/tech-blog1.png';
 import weatherDashPic from '../images/weather-dashboard3.png';
 import ethelPic from '../images/ethel-portfolio3.png';
+import vailPic from '../images/vail-mock2.png';
 
 export default function Portfolio() {
+
+  // leverage custom hook to determine media size for work section change
+   const isWide = useMedia('(max-width: 1700px)');
+
   return (
     <div className="split-content">
       <div className="container-top">
@@ -26,15 +32,35 @@ export default function Portfolio() {
       <div className="container-bottom">
         <div className="portfolio-container">
           <h1 className="portfolio-h1">My Work</h1>
-          <section className="work-section">
-              <ProductCard project={projects.ethel} imageSrc={ethelPic}/>
-              <ProductCard project={projects.theHappyPlace} imageSrc={happyPlacePic}/>
-              <ProductCard project={projects.pubCrawler} imageSrc={pubCrawlerPic}/>
-              <ProductCard project={projects.textEditor} imageSrc={textEditorPic}/>
-              <ProductCard project={projects.codeQuiz} imageSrc={codeQuizPic}/>
-              <ProductCard project={projects.techBlog} imageSrc={techBlogPic}/>
-              <ProductCard project={projects.weatherDashboard} imageSrc={weatherDashPic}/>
-          </section>
+          {isWide && 
+            <section className="work-section">
+                <ProductCard project={projects.vailMock} imageSrc={vailPic}/>
+                <ProductCard project={projects.ethel} imageSrc={ethelPic}/>
+                <ProductCard project={projects.techBlog} imageSrc={techBlogPic}/>
+                <ProductCard project={projects.theHappyPlace} imageSrc={happyPlacePic}/>
+                <ProductCard project={projects.pubCrawler} imageSrc={pubCrawlerPic}/>
+                <ProductCard project={projects.codeQuiz} imageSrc={codeQuizPic}/>
+                <ProductCard project={projects.weatherDashboard} imageSrc={weatherDashPic}/>
+                <ProductCard project={projects.textEditor} imageSrc={textEditorPic}/>
+            </section>
+          }
+          {!isWide &&
+            <section className="work-section-wide">
+              <div className="work-section">
+                <ProductCard project={projects.ethel} imageSrc={ethelPic}/>
+                <ProductCard project={projects.vailMock} imageSrc={vailPic}/>
+                <ProductCard project={projects.theHappyPlace} imageSrc={happyPlacePic}/>
+                <ProductCard project={projects.pubCrawler} imageSrc={pubCrawlerPic}/>
+              </div>
+              <div className="work-section">
+                <ProductCard project={projects.techBlog} imageSrc={techBlogPic}/>
+                <ProductCard project={projects.weatherDashboard} imageSrc={weatherDashPic}/>
+                <ProductCard project={projects.codeQuiz} imageSrc={codeQuizPic}/>
+                <ProductCard project={projects.textEditor} imageSrc={textEditorPic}/>
+              </div>
+            </section>
+          }
+
         </div>
       </div>
     </div>

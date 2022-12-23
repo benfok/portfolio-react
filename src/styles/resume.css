@@ -35,7 +35,7 @@
 }
 
 .language-icon {
-    color: var(--secondaryfont);
+    color: var(--primaryfont);
     font-size: 200%;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .icon-wrapper:hover .language-icon {
-    color: var(--headerbg);
+    color: var(--btnbghover);
 }
 
 .icon-wrapper:hover .language-text {

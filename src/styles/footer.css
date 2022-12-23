@@ -19,7 +19,7 @@ footer {
 .social-link:hover,
 .social-link:focus {
     transform: rotate(360deg);
-    color: var(--primaryfont);
+    color: var(--headerhover);
     cursor: pointer;
 }
 
