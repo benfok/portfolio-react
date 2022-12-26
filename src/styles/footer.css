@@ -23,6 +23,18 @@ footer {
     cursor: pointer;
 }
 
+.footer-mobile .social-link {
+    color: var(--titlefont);
+}
+
+.footer-mobile p {
+    color: var(--titlefont);
+}
+
+.footer-mobile .social-link:hover {
+    color: var(--footerhover);
+}
+
 @media screen and (min-width: 1200px) {
     footer {
         align-items: flex-start;

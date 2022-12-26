@@ -9,7 +9,7 @@ import '../../styles/header.css';
 
 
 
-function Header() {
+const Header = () => {
     
     // add state for mobile menu
     const [isOpen, setOpen ] = useState(false);

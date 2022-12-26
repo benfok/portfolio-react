@@ -13,6 +13,7 @@
   --titlefont: #0c0c0c;
   --primaryfont: #363020;
   --headerhover: #363020;
+  --footerhover: #EE6352;
   --secondaryfont: white;
   --errortext: #C42021;
   --navactive: #EE6352;
@@ -31,6 +32,7 @@
   --primaryfont: #0c0c0c;
   --secondaryfont: white;
   --headerhover: #cccccc;
+  --footerhover: #363020;
   --errortext: #C42021;
   --navactive: #157145;
   --highlighttext: #157145;
@@ -48,6 +50,7 @@
   --primaryfont: #E3E3E3;
   --secondaryfont: #0c0c0c;
   --headerhover: #EA80FC;
+  --footerhover: #EA80FC;
   --errortext: #C42021;
   --navactive: #EA80FC;
   --highlighttext: #03DAC6;
