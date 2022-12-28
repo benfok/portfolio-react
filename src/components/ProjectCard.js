@@ -36,7 +36,7 @@ const ProductCard = (props) => {
                     }
                     <a className="work-btn" href={project.repoLink} target="_blank" rel="noreferrer">Repo</a>
                     {!project.live &&
-                        <p className="error">Live site is currently down for maintenance.<br/>For more details regarding this application please contact me.</p>
+                        <p className="error">Live site is temporarily undergoing maintenance.<br/>For more details regarding this application please view the repo or contact me.</p>
                     }
                 </div>
             </figcaption>
