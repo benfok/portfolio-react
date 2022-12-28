@@ -21,6 +21,7 @@
   --btnborder:#EE6352;
   --btnbg:white;
   --btnbghover:#EE6352;
+  --btntexthover:white;
 }
 
 .bw-mode {
@@ -39,24 +40,26 @@
   --btnborder:black;
   --btnbg:white;
   --btnbghover:black;
+  --btntexthover: white;
 }
 
 .dark-mode {
-  --headerbg: #121212;
+  --headerbg: #061724;
   --headercolor: #E3E3E3;
-  --bodybg: #1E1E1E; 
-  --cardbg: #121212;
+  --bodybg: #0C2233; 
+  --cardbg: #061724;
   --titlefont: #eeeeee;
-  --primaryfont: #E3E3E3;
+  --primaryfont: #D6D6D6;
   --secondaryfont: #0c0c0c;
-  --headerhover: #EA80FC;
-  --footerhover: #EA80FC;
+  --headerhover: #03DAC6;
+  --footerhover: #03DAC6;
   --errortext: #C42021;
-  --navactive: #EA80FC;
+  --navactive: #03DAC6;
   --highlighttext: #03DAC6;
-  --btnborder:#EA80FC;
-  --btnbg:#121212;
-  --btnbghover:#EA80FC;
+  --btnborder:#03DAC6;
+  --btnbg:#061724;
+  --btnbghover:#03DAC6;
+  --btntexthover: #061724;
 }
 
 html {

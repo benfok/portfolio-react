@@ -104,7 +104,7 @@ header {
     background-color: var(--btnbghover);
     border: solid 3px var(--btnborder);
     cursor: pointer;
-    color: var(--headercolor);
+    color: var(--btntexthover);
 }
 
 .mobile-nav {
@@ -206,7 +206,7 @@ header {
 }
 
 .theme-dark {
-    color: #363020;
+    color: #061724;
 }
 
 
