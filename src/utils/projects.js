@@ -36,7 +36,7 @@ export const projects = {
     theHappyPlace: {
             title: 'The Happy Place',
             live: true,
-            liveLink: 'https://happy-place.cyclic.app/',
+            liveLink: 'https://happy-place.cyclic.app/1671580800',
             repoLink: 'https://github.com/benfok/the-happy-place-forked',
             technologies: 'HTML | CSS | JavaScript | Node.js | Express | MySQL | Handlebars.js',
             shortDescription: 'Promoting mental wellbeing through a daily journal where users post publically or privately. Intentionally free of "likes", comments and photos to ensure the focus is on personal habits and daily gratitudes.',

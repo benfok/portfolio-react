@@ -6,6 +6,7 @@ import MenuCloseButton from './MenuCloseButton';
 import useMedia from '../../hooks/useMedia';
 import { PageProvider } from '../../contexts/PageContext';
 import '../../styles/header.css';
+import ThemeMenu from './ThemeMenu';
 
 
 
@@ -38,8 +39,12 @@ const Header = () => {
                     {!isMobile && <NavBar />} 
                     {/* If a desktop function (such as resume button) moves into the right container, move navbar to center */}
                     {!isOpen && isMobile && <MenuOpenButton toggleMobileNav={toggleMobileNav} />}
-                    {isOpen && <MenuCloseButton toggleMobileNav={toggleMobileNav} />}
-                    {/* {!isMobile && <Button src={'/resume'} text={'Resume'} />} */}
+                    {isOpen && 
+                        <>
+                            <ThemeMenu />
+                            <MenuCloseButton toggleMobileNav={toggleMobileNav} />
+                        </>
+                    }
                 </div>
             </header>
         </PageProvider>

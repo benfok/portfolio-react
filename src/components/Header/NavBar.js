@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { usePageContext } from '../../contexts/PageContext';
+import ThemeMenu from './ThemeMenu';
 
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
@@ -57,6 +58,7 @@ const NavBar = () => {
           Resume
         </Link>
       </li>
+      <ThemeMenu />
     </ul>
   );
 }
