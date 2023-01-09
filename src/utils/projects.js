@@ -18,18 +18,18 @@ export const projects = {
         
     ethel: {
         title: 'Ethel',
-        live: false,
-        liveLink: 'https://ethel-notes.herokuapp.com/',
-        repoLink: 'https://github.com/benfok/Ethel',
+        live: true,
+        liveLink: 'https://ethel.onrender.com/',
+        repoLink: 'https://github.com/benfok/ethel-static',
         technologies: 'React | HTML | CSS | JavaScript | Node.js | Express | MongoDB | Apollo/GraphQL',
-        shortDescription: 'List making and note taking app that allows lists to be shared with other users and updated in real-time',
+        shortDescription: 'List making and note taking app that allows lists to be shared with other users, updated and collaborated on in real-time',
         bulletDescription: 
         <ul>
             <li>Contributed: All code except some CSS and DB models</li>
             <li>All CRUD operations leverage GraphQL</li>
             <li>Uses JWT for user authentication</li>
             <li>Users can share lists by searching for users or through their shared history. Shared lists can be refreshed to see real-time data</li>
-            <li>Lists can be actioned on independantly and simultaneously</li>
+            <li>Lists can be actioned on independently and simultaneously</li>
         </ul>,  
     },
 
