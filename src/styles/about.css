@@ -1,5 +1,5 @@
 .intro-about {
-    padding: 0 3rem;
+    padding: 0 2rem;
     text-align: center;
     display: flex;
     flex-flow: column;
@@ -9,6 +9,44 @@
 
 .intro-about p {
     margin-bottom: 2rem;
+}
+
+h1 {
+    height: 150px;
+}
+
+.h1-typing {
+    color: var(--btnbghover);
+}
+
+.h1-blink {
+    color: var(--btnbghover);
+    margin-left: 0.5rem;
+    animation: blink-animation 1s steps(2, end) infinite;
+    -webkit-animation: blink-animation 1s steps(2, end) infinite;
+}
+
+@keyframes blink-animation {
+    0% {
+        visibility: hidden;
+      }
+}
+
+@-webkit-keyframes blink-animation {
+    0% {
+        visibility: hidden;
+      }
+}
+
+@media screen and (min-width: 768px) {
+
+    .intro-about {
+        padding: 0 3rem;
+    }
+
+    h1 {
+        height: 80px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -24,5 +62,16 @@
     .intro-about h1 {
         text-align: left;
     }
+    
+    h1 {
+        height: 150px;
+    }
 
+}
+
+@media screen and (min-width: 1500px) {
+
+    h1 {
+        height: 80px;
+    }
 }
