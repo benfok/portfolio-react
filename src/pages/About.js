@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import '../styles/pageLayout.css';
 import '../styles/about.css';
 import aboutPic from '../images/profile1.jpg';
+import FeatureBlocks from '../components/FeatureBlocks';
 
 
 export default function About() {
@@ -53,17 +54,20 @@ export default function About() {
       </div>
       <div className="container-bottom">
         <article className='intro-about'>
-          <h1>I do <span id="typed-text">Web Development.</span><span id="cursor" className="h1-blink">|</span></h1>
+          <h1 className="typed-h1">I do <span id="typed-text">Web Development.</span><span id="cursor" className="h1-blink">|</span></h1>
           <p>
-              A freelance Full Stack Developer specializing in creating clean and scalable web pages. 
+              I'm Ben Fok, a freelance Full Stack Web Developer and Technical Project Manager 
               <br/><br/>
-              With over a decade of experience as a senior leader at a Fortune 1000 company I bring a unique blend of business accumen, resource management, leadership skills and technical expertise to every project. 
+              With over a decade as a senior leader at a Fortune 1000 company, I bring a unique blend of business accumen, leadership skills and technical expertise to every project. 
               <br/><br/>
+              {/* Need copy written or content designed for an existing website? Or want a fresh new look or a custom web application built for your business? Or do you have a large technical project with multiple teams and need someone to help manage it all?
+              <br/><br/> */}
               Whether writing the code behind the scenes, or bringing your product to life through words and visual design, I deliver intuitive digital solutions that look great and function in the most effective way for your business.
               <br/><br/>
               Let's work together!
           </p>
         </article>
+        {/* <FeatureBlocks /> */}
       </div>
     </div>
   );

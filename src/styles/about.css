@@ -11,7 +11,7 @@
     margin-bottom: 2rem;
 }
 
-h1 {
+.typed-h1 {
     height: 150px;
 }
 
@@ -44,7 +44,7 @@ h1 {
         padding: 0 3rem;
     }
 
-    h1 {
+    .typed-h1 {
         height: 80px;
     }
 }
@@ -63,7 +63,7 @@ h1 {
         text-align: left;
     }
     
-    h1 {
+    .typed-h1 {
         height: 150px;
     }
 
@@ -71,7 +71,7 @@ h1 {
 
 @media screen and (min-width: 1500px) {
 
-    h1 {
-        height: 80px;
+    .typed-h1 {
+        height: 90px;
     }
 }
