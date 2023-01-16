@@ -23,6 +23,8 @@
   --btnbghover:#EE6352;
   --btntexthover:white;
   --tabbg: #EE6352;
+  --tabicon:  #363020;
+  --tabiconactive: #363020;
 }
 
 .bw-mode {
@@ -42,6 +44,8 @@
   --btnbg:white;
   --btnbghover:black;
   --btntexthover: white;
+  --tabicon:  white;
+  --tabiconactive: black;
 }
 
 .dark-mode {
@@ -61,6 +65,8 @@
   --btnbg:#061724;
   --btnbghover:#03DAC6;
   --btntexthover: #061724;
+  --tabicon:  #D6D6D6;
+  --tabiconactive: #03DAC6;
 }
 
 html {

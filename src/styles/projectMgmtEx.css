@@ -3,7 +3,7 @@
 }
 
 .pm-ex-cont-mobile {
-    border: solid 2px var(--navactive);
+    border: solid 2px var(--btnborder);
     padding: 1rem 0;
     border-radius: 5px;
     background-color: var(--cardbg);

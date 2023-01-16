@@ -29,7 +29,7 @@
     width: 33%;
     height: 100%;
     border-radius: 25px;
-    opacity: 75%;
+    opacity: 90%;
 }
 
 .tab:hover {
@@ -38,12 +38,17 @@
 
 .tab-icon {
     font-size: 35px;
+    color: var(--tabicon);
 }
 
 .tab-active {
     background-color: var(--cardbg);
-    border: solid 3px var(--headerbg);
+    border: solid 3px var(--btnborder);
     opacity: 100%;
+}
+
+.tab-active > .tab-icon {
+    color: var(--tabiconactive);
 }
 
 .tab-content {
