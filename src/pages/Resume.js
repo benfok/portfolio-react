@@ -5,7 +5,7 @@ import { SiHtml5, SiCss3, SiJavascript, SiBootstrap, SiNodedotjs, SiExpress, SiR
 import LanguageIcon from '../components/LanguageIcon';
 import useMedia from '../hooks/useMedia';
 import resumePic from '../images/profile3bw.png';
-import resume from '../files/resume_FOK_220412.pdf';
+import resume from '../files/resume_FOK_221231.pdf';
 import '../styles/resume.css';
 
 export default function Resume() {
