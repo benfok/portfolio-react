@@ -80,6 +80,7 @@ header {
 
 .nav-link {
     color: var(--headercolor);
+    font-weight: 400;
 }
 
 .nav-link:hover {
