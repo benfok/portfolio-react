@@ -86,7 +86,7 @@ export const projects = {
             live: true,
             liveLink: 'https://benfok.github.io/code-quiz/',
             repoLink: 'https://github.com/benfok/code-quiz',
-            technologies: 'HTML | CSS | JavaScript | localStorage',
+            technologies: 'HTML | CSS | JavaScript',
             shortDescription: 'Timed, randomized quiz of Javascript questions with scores saved within the browser.',
             bulletDescription:
             <ul>
@@ -102,7 +102,7 @@ export const projects = {
             live: true,
             liveLink: 'https://tech-blog.cyclic.app',
             repoLink: 'https://github.com/benfok/tech-blog',
-            technologies: 'HTML | CSS | JavaScript | Node.js | Express | MySQL | Handlebars.js',
+            technologies: 'HTML | CSS | JavaScript | Node.js | Express | MySQL',
             shortDescription: 'CMS-style blog site where users can publish their blog posts and comment on others.',
             bulletDescription: 
             <ul>

@@ -1,0 +1,157 @@
+.services-cont {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.services-intro {
+    text-align: center;
+    padding: 0 2rem;
+    margin: 1rem 0 3rem 0;
+    width: 100%;
+}
+
+.tab-cont {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    background-color: var(--headerbg);
+    width: 80%;
+    max-width: 390px;
+    height: 60px;
+    border-radius: 25px;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    height: 100%;
+    border-radius: 25px;
+    opacity: 75%;
+}
+
+.tab:hover {
+    cursor: pointer;
+}
+
+.tab-icon {
+    font-size: 35px;
+}
+
+.tab-active {
+    background-color: var(--cardbg);
+    border: solid 3px var(--headerbg);
+    opacity: 100%;
+}
+
+.tab-content {
+    text-align: center;
+    padding: 3rem 2rem;
+    margin: -3px 0 3rem 0;
+}
+
+.tab-content > ul {
+    margin: 1rem 0 1.5rem 2rem;
+    text-align: left;
+}
+
+.tab-content > ul > li {
+    margin-bottom: 0.5rem;
+}
+
+.li-sub {
+    font-size: 80%;
+    color: var(--navactive);
+    font-style: italic;
+}
+
+.text-link {
+    color: var(--navactive);
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    font-size: 90%;
+    /* max-width: 160px; */
+}
+
+.text-link:hover {
+    font-style: italic;
+    cursor: pointer;
+}
+
+.i-icon {
+    font-size: 25px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .services-intro {
+        padding: 0 5rem;
+    }
+
+    .tab-cont {
+        border-radius: 25px 25px 0 0;
+    }
+
+    .tab-active {
+        border-bottom: solid 3px var(--cardbg);
+        z-index: 1;
+    }
+
+    .tab {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .tab:first-of-type {
+        border-radius: 25px 10px 0 0;
+    }
+
+    .tab:last-of-type {
+        border-radius: 10px 25px 0 0;       
+    }
+
+    .tab-content {
+        border-top: solid 3px var(--headerbg);
+        width: 92%;
+        background-color: var(--cardbg);
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+        text-align: left;
+    }
+
+    .text-link {
+        justify-content: start;
+        max-width: 160px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .services-cont {
+        padding-left: 240px;
+    }
+
+    .services-intro {
+        text-align: left;
+        padding: 0 2rem;
+    }
+
+    .services-h1 {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+
+    .services-cont {
+        padding-left: 250px;
+    }
+
+    .services-intro {
+        margin-bottom: 2rem;
+    }
+}

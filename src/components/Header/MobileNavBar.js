@@ -42,6 +42,15 @@ const { currentPage, setCurrentPage } = usePageContext();
         </li>
         <li className="mobile-nav-item">
             <Link
+            to="/services"
+            onClick={() => closeMenu('Services')}
+            className="nav-link"
+            >
+            Services
+            </Link>
+        </li>
+        <li className="mobile-nav-item">
+            <Link
             to="/portfolio"
             onClick={() => closeMenu('Portfolio')}
             className="nav-link"

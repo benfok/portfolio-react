@@ -4,14 +4,17 @@ import MobileNavBar from './MobileNavBar';
 import MenuOpenButton from './MenuOpenButton';
 import MenuCloseButton from './MenuCloseButton';
 import useMedia from '../../hooks/useMedia';
-import { PageProvider } from '../../contexts/PageContext';
 import '../../styles/header.css';
 import ThemeMenu from './ThemeMenu';
-
+import { Link } from 'react-router-dom';
+import { usePageContext } from '../../contexts/PageContext';
 
 
 const Header = () => {
     
+    // bring in page context for logo link
+    const { setCurrentPage } = usePageContext();
+
     // add state for mobile menu
     const [isOpen, setOpen ] = useState(false);
 
@@ -27,27 +30,30 @@ const Header = () => {
 
     // wrapping the header with the page provider to hold and pass the global state of the current page.
     return (
-        <PageProvider>
-            <header>
-                {isOpen && <MobileNavBar toggleMobileNav={toggleMobileNav} />}
-                <div id="header-left">
+        <header>
+            {isOpen && <MobileNavBar toggleMobileNav={toggleMobileNav} />}
+            <div id="header-left">
+                <Link
+                    to="/about"
+                    onClick={() => setCurrentPage('About')}
+                >
                     <p id="logo">BF</p>
-                </div>
-                <div id="header-center">
-                </div>
-                <div id="header-right">
-                    {!isMobile && <NavBar />} 
-                    {/* If a desktop function (such as resume button) moves into the right container, move navbar to center */}
-                    {!isOpen && isMobile && <MenuOpenButton toggleMobileNav={toggleMobileNav} />}
-                    {isOpen && 
-                        <>
-                            <ThemeMenu />
-                            <MenuCloseButton toggleMobileNav={toggleMobileNav} />
-                        </>
-                    }
-                </div>
-            </header>
-        </PageProvider>
+                </Link>
+            </div>
+            <div id="header-center">
+            </div>
+            <div id="header-right">
+                {!isMobile && <NavBar />} 
+                {/* If a desktop function (such as resume button) moves into the right container, move navbar to center */}
+                {!isOpen && isMobile && <MenuOpenButton toggleMobileNav={toggleMobileNav} />}
+                {isOpen && 
+                    <>
+                        <ThemeMenu />
+                        <MenuCloseButton toggleMobileNav={toggleMobileNav} />
+                    </>
+                }
+            </div>
+        </header>
     )
 
 }

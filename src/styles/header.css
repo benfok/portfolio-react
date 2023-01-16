@@ -213,13 +213,12 @@ header {
 @media screen and (min-width: 1200px) {
     header {
         display: grid;
-        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-columns: 330px 1fr 2fr;
     }
 
     #header-left {
         padding: 0 20px;
         width: 100%;
-        max-width: 280px;
     }
 
     #header-right,
@@ -241,4 +240,10 @@ header {
         color: var(--navactive);
     }
     
+}
+
+@media screen and (min-width: 1850px) {
+    header {
+        max-width: 1850px;
+    }
 }

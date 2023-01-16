@@ -1,0 +1,36 @@
+.client-list {
+    margin: 3rem 0 3rem 0;
+}
+
+.cl-logos-cont {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 1rem;
+}
+
+.client-logo-long {
+    height: 20px;
+    top: 0px;
+    transition: top 300ms;
+}
+
+.client-logo-square {
+    height: 35px;
+    top: 0px;
+    transition: top 300ms;
+}
+
+.client-logo-square:hover,
+.client-logo-long:hover {
+    top: -8px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .cl-logos-cont {
+        justify-content: flex-start;
+    }
+}

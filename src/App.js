@@ -9,42 +9,52 @@ import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
+import Services from './pages/Services';
 import Header from './components/Header/index';
 import Footer from './components/Footer';
+
+import { PageProvider } from './contexts/PageContext';
+
 
 function App() {
   return (
       <Router basename="/portfolio-react">
         <div id="react-content-container" className="container">
-          <Header />
-          <main>
-            <Routes>
-              {/* <Route 
-                path="/" 
-                element={<Home />} 
-              /> */}
-              <Route 
-                path="/" 
-                element={<About />} 
-              />
-              <Route 
-                path="/portfolio" 
-                element={<Portfolio />} 
-              />
-              <Route 
-                path="/contact" 
-                element={<Contact />} 
-              />
-              <Route 
-                path="/resume" 
-                element={<Resume />} 
-              />
-              <Route 
-                path="*" 
-                element={<About />} 
-              />
-            </Routes>
-          </main>
+          <PageProvider>
+            <Header />
+            <main>
+              <Routes>
+                {/* <Route 
+                  path="/" 
+                  element={<Home />} 
+                /> */}
+                <Route 
+                  path="/" 
+                  element={<About />} 
+                />
+                <Route 
+                  path="/services" 
+                  element={<Services />} 
+                />
+                <Route 
+                  path="/portfolio" 
+                  element={<Portfolio />} 
+                />
+                <Route 
+                  path="/contact" 
+                  element={<Contact />} 
+                />
+                <Route 
+                  path="/resume" 
+                  element={<Resume />} 
+                />
+                <Route 
+                  path="*" 
+                  element={<About />} 
+                />
+              </Routes>
+            </main>
+          </PageProvider>
           <Footer />
         </div>
       </Router>

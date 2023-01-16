@@ -3,6 +3,8 @@ import '../styles/pageLayout.css';
 import '../styles/about.css';
 import aboutPic from '../images/profile1.jpg';
 import FeatureBlocks from '../components/FeatureBlocks';
+import ClientList from '../components/clientList';
+
 
 
 export default function About() {
@@ -14,62 +16,74 @@ export default function About() {
   const text = ["Web Development.","Project Management.", "Copywriting.","Content Design."];
 
   const typewriter = () => {
-    if (wordIndex > 3) { // adjust this if the array length above is changed
-      wordIndex = 0;
-    }
-    if(i < text[wordIndex].length) {
-      speed = Math.floor(Math.random() * (150 - 80) + 80); // generates random speed number to simulate actual typing
-      document.getElementById("typed-text").innerHTML += text[wordIndex].charAt(i);
-      i++;
-      setTimeout(typewriter, speed);
-    } else {
-      document.getElementById("cursor").className = "h1-blink";
-      wordIndex++;
-      setTimeout(deleteText, 2000);  // deletes text after phrase is typed
+    if (typeof i === 'number') {
+      if (wordIndex > 3) { // adjust this if the array length above is changed
+        wordIndex = 0;
+      }
+      if(i < text[wordIndex].length) {
+        speed = Math.floor(Math.random() * (150 - 80) + 80); // generates random speed number to simulate actual typing
+        document.getElementById("typed-text").innerHTML += text[wordIndex].charAt(i);
+        i++;
+        setTimeout(typewriter, speed);
+      } else {
+        document.getElementById("cursor").className = "h1-blink";
+        wordIndex++;
+        setTimeout(deleteText, 2000);  // deletes text after phrase is typed
+      }
     }
   }
 
   const deleteText = () => {
-    document.getElementById("cursor").className = "h1-typing";
+    if (typeof i === 'number') {
+    
+      document.getElementById("cursor").className = "h1-typing";
 
-    if(i > 0) {
-      const deleteSpeed = 40;
-      document.getElementById("typed-text").innerHTML = document.getElementById("typed-text").innerHTML.slice(0, -1);
-      i--;
-      setTimeout(deleteText, deleteSpeed);
-    } else {
-      setTimeout(typewriter, 200);  // loop back to type next phrase
+      if(i > 0) {
+        const deleteSpeed = 40;
+        document.getElementById("typed-text").innerHTML = document.getElementById("typed-text").innerHTML.slice(0, -1);
+        i--;
+        setTimeout(deleteText, deleteSpeed);
+      } else {
+        setTimeout(typewriter, 200);  // loop back to type next phrase
+      }
     }
   }
 
-  // after page loads perform initial delete
   useEffect(() => {
+    // after page loads perform initial delete
     setTimeout(deleteText, 2000); 
+    return () => {
+      // when this page unmounts (i.e. when someone navigates away) change the i variable to stop the typing loop
+      i = false; 
+    }
   });
 
   return (
-    <div className="split-content">
-      <div className="container-top">
-        <img src={aboutPic} alt="profile" className="main-img"></img>
+      <div className="split-content">
+        <div className="container-top">
+          <img src={aboutPic} alt="profile" className="main-img"></img>
+        </div>
+        <div className="container-bottom">
+          <section className='about-cont'>
+            <article>
+              <h1 className="typed-h1"><span id="typed-text">Web Development.</span><span id="cursor" className="h1-blink">|</span></h1>
+              <p>
+                  I'm Ben Fok, a freelance Full Stack Web Developer and Technical Project Manager 
+                  <br/><br/>
+                  With over a decade as a senior leader at a Fortune 1000 company, I bring a unique blend of business accumen, leadership skills and technical expertise to every project. 
+                  <br/><br/>
+                  {/* Need copy written or content designed for an existing website? Or want a fresh new look or a custom web application built for your business? Or do you have a large technical project with multiple teams and need someone to help manage it all?
+                  <br/><br/> */}
+                  Whether writing the code behind the scenes, or bringing your product to life through words and visual design, I deliver intuitive digital solutions that look great and function in the most effective way for your business.
+              </p>
+            </article>
+            <ClientList
+                    listArray={['timFok', 'vailResorts', 'epicPass', 'wb', 'vail', 'beaverCreek', 'breck', 'stevensPass', 'crestedButte', 'parkCity', 'keystone', 'heavenly', 'northstar', 'kirkwood', 'hunter', 'stowe', 'mountSnow', 'okemo', 'psia', 'pnsaa'  ]}
+                />
+            <FeatureBlocks />
+          </section>
+        </div>
       </div>
-      <div className="container-bottom">
-        <article className='intro-about'>
-          <h1 className="typed-h1">I do <span id="typed-text">Web Development.</span><span id="cursor" className="h1-blink">|</span></h1>
-          <p>
-              I'm Ben Fok, a freelance Full Stack Web Developer and Technical Project Manager 
-              <br/><br/>
-              With over a decade as a senior leader at a Fortune 1000 company, I bring a unique blend of business accumen, leadership skills and technical expertise to every project. 
-              <br/><br/>
-              {/* Need copy written or content designed for an existing website? Or want a fresh new look or a custom web application built for your business? Or do you have a large technical project with multiple teams and need someone to help manage it all?
-              <br/><br/> */}
-              Whether writing the code behind the scenes, or bringing your product to life through words and visual design, I deliver intuitive digital solutions that look great and function in the most effective way for your business.
-              <br/><br/>
-              Let's work together!
-          </p>
-        </article>
-        {/* <FeatureBlocks /> */}
-      </div>
-    </div>
   );
 }
 

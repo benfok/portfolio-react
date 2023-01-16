@@ -1,0 +1,105 @@
+.pm-ex-cont {
+    margin: 3rem 0;
+}
+
+.pm-ex-cont-mobile {
+    border: solid 2px var(--navactive);
+    padding: 1rem 0;
+    border-radius: 5px;
+    background-color: var(--cardbg);
+    margin: 2rem -20px;
+}
+
+.project-ex {
+    margin: 2rem 0 3rem 0;
+    padding: 0 10px;
+}
+
+.project-ex > h4::before {
+    content: "\005B";  /* \005B is the CSS Code/unicode for a bullet */
+    color: var(--navactive);
+    font-weight: bold; 
+    display: inline-block; 
+    width: 10px; 
+}
+
+.project-ex > h4::after {
+    content: "\005D";  /* \005B is the CSS Code/unicode for a bullet */
+    color: var(--navactive);
+    font-weight: bold; 
+    display: inline-block; 
+    width: 10px; 
+}
+
+.pm-stats-cont {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 1rem 0 5px 0;
+}
+
+.pm-stat {
+    text-align: center;
+    margin: 0 1rem;
+}
+
+.pm-stat-no > svg {
+    color: var(--primaryfont);
+}
+
+.pm-stat-no {
+    font-size: 30px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--navactive);
+}
+
+.article-list {
+    list-style: none;
+    margin: 1rem 0 1rem 1rem;
+    text-align: left;
+    list-style-position: outside;
+}
+
+.article-list li::before {
+    content: "\2022";  /* \2022 is the CSS Code/unicode for a bullet */
+    color: var(--navactive);
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em;
+}
+
+.pm-copy-ext,
+.pm-copy-ext > p {
+    font-size: 16px !important;
+}
+
+
+@media screen and (min-width: 768px) {
+    .pm-stats-cont {
+        justify-content: flex-start;
+    }
+
+    .pm-stat {
+        text-align: left;
+        margin: 0 2rem 0 0;
+    }
+
+    .pm-stat:last-of-type {
+        text-align: left;
+        margin: 0;
+    }
+
+    .pm-stat-no {
+        justify-content: flex-start;
+    }
+
+    .article-list {
+        list-style: none;
+        margin-left: 3rem;
+    }
+}

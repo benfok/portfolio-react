@@ -60,7 +60,7 @@
 @media screen and (min-width: 1200px) {
    
     .intro-resume {
-        padding: 80px 50px 0 250px;
+        padding: 0 50px 0 280px;
         text-align: left;
         font-size: 110%;
         align-items: flex-start;
@@ -73,7 +73,7 @@
     }
 
     .skills-container {
-        padding-left: 250px;
+        padding-left: 280px;
         align-items: flex-start;
     }
 

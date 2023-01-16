@@ -1,4 +1,4 @@
-.intro-about {
+.about-cont {
     padding: 0 2rem;
     text-align: center;
     display: flex;
@@ -7,7 +7,7 @@
     margin-bottom: 20px;
 }
 
-.intro-about p {
+.about-cont > article > p {
     margin-bottom: 2rem;
 }
 
@@ -40,7 +40,7 @@
 
 @media screen and (min-width: 768px) {
 
-    .intro-about {
+    .about-cont {
         padding: 0 3rem;
     }
 
@@ -51,27 +51,18 @@
 
 @media screen and (min-width: 1200px) {
 
-    .intro-about {
-        padding-left: 350px;
-        padding-right: 100px;
+    .about-cont {
+        padding: 20px 50px 0 280px;
         text-align: left;
         font-size: 110%;
-        margin-top: -50px;
     }
 
-    .intro-about h1 {
+    .about-cont h1 {
         text-align: left;
     }
     
     .typed-h1 {
-        height: 150px;
-    }
-
-}
-
-@media screen and (min-width: 1500px) {
-
-    .typed-h1 {
         height: 90px;
     }
+
 }

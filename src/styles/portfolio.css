@@ -1,6 +1,12 @@
+.portfolio-intro {
+    text-align: center;
+    padding: 0 2rem;
+    margin: 1rem 0 4rem 0;
+}
+
 .work-section {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     align-content: center;
     justify-content: space-evenly;
     width: 100%;
@@ -9,12 +15,6 @@
     margin: 2rem 0;
 }
 
-/* .column {
-    flex: 1 0 100%;
-    display: flex;
-    flex-flow: column;
-    gap: 4rem;
-} */
 
 .work-card {
     flex: 1 0 100%;
@@ -106,6 +106,10 @@ h3 {
 
 @media screen and (min-width: 768px) {
 
+    .portfolio-intro {
+        padding: 0 5rem;
+    }
+
     .work-pic-container {
         max-height: 450px;
     }
@@ -126,6 +130,11 @@ h3 {
 
     .work-section {
         gap: 2rem;
+        align-content: flex-start;
+    }
+
+    .portfolio-intro {
+        padding: 0 2rem;
     }
 
     .work-pic-container {
@@ -133,15 +142,10 @@ h3 {
     }
 
    figcaption {
-        /* position: absolute; */
-        /* bottom: 0; */
-        /* opacity: 0.9; */
-        /* background-color: var(--bodybg); */
         padding: 2rem 1rem;
         width: 90%;
         transition: 1s ease;
         text-align: center;
-        /* border: solid 1px var(--secondaryfont); */
     }
 
     .work-description {
@@ -150,7 +154,6 @@ h3 {
     }
 
     .transparent {
-        /* opacity: 0; */
         transition: 1s ease;
         height:auto;
     }
@@ -159,10 +162,6 @@ h3 {
         height: 100%;
         transition: 1s ease;
     }
-
-    /* .work-card:hover figcaption {
-        opacity: 0.95;
-    } */
 
     .card-icon {
         position: absolute;
@@ -186,29 +185,16 @@ h3 {
         transform: rotate(360deg);
     }
 }
-/* 
-@media screen and (min-width: 768px) {
-
-    figcaption {
-        padding: 4rem 2rem;
-    }
-
-} */
 
 @media screen and (min-width: 1200px) {
    
     .portfolio-container {
-        margin-top: 130px;
         padding-left: 280px;
     }
 
-    /* .work-section {
-        padding-right: 50px;
-        flex-flow: row wrap;
-        justify-content: flex-start;
-        align-items:flex-start;
-        margin-top: 2rem;
-    } */
+    .portfolio-intro {
+        text-align: left;
+    }
 
     .portfolio-h1 {
         text-align: left;
@@ -239,8 +225,11 @@ h3 {
 @media screen and (min-width: 1700px) {
    
     .portfolio-container {
-        margin-top: 130px;
         padding-left: 250px;
+    }
+
+    .portfolio-intro {
+        margin-bottom: 2rem;
     }
 
     .work-section-wide {

@@ -31,7 +31,11 @@ export default function Portfolio() {
       </div>
       <div className="container-bottom">
         <div className="portfolio-container">
-          <h1 className="portfolio-h1">My Work</h1>
+          <div className="portfolio-intro">
+            <div className='sub-header'>Web Applications</div>
+            <h1 className="portfolio-h1">My Projects</h1>
+            <p>Below are some of my projects to highlight a full stack skillset; from front end user interface design to back end server and database setup. Need a custom web application built for your business?</p>
+          </div>
           {isWide && 
             <section className="work-section">
                 <ProductCard project={projects.vailMock} imageSrc={vailPic}/>
@@ -48,12 +52,12 @@ export default function Portfolio() {
             <section className="work-section-wide">
               <div className="work-section">
                 <ProductCard project={projects.ethel} imageSrc={ethelPic}/>
-                <ProductCard project={projects.vailMock} imageSrc={vailPic}/>
+                <ProductCard project={projects.techBlog} imageSrc={techBlogPic}/>
                 <ProductCard project={projects.theHappyPlace} imageSrc={happyPlacePic}/>
                 <ProductCard project={projects.pubCrawler} imageSrc={pubCrawlerPic}/>
               </div>
               <div className="work-section">
-                <ProductCard project={projects.techBlog} imageSrc={techBlogPic}/>
+                <ProductCard project={projects.vailMock} imageSrc={vailPic}/>
                 <ProductCard project={projects.weatherDashboard} imageSrc={weatherDashPic}/>
                 <ProductCard project={projects.codeQuiz} imageSrc={codeQuizPic}/>
                 <ProductCard project={projects.textEditor} imageSrc={textEditorPic}/>
