@@ -4,8 +4,6 @@ import '../styles/clientList.css';
 
 const ClientList = ({listArray}) => {
 
-    console.log(listArray)
-
     const list = 
         listArray.map((client, index) => {
             return (

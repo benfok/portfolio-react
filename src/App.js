@@ -29,23 +29,27 @@ function App() {
                   element={<Home />} 
                 /> */}
                 <Route 
-                  path="/" 
+                  path="" 
                   element={<About />} 
                 />
                 <Route 
-                  path="/services" 
+                  path="services/:active_tab" 
                   element={<Services />} 
                 />
                 <Route 
-                  path="/portfolio" 
+                  path="/services/*" 
+                  element={<Services />} 
+                />
+                <Route 
+                  path="portfolio" 
                   element={<Portfolio />} 
                 />
                 <Route 
-                  path="/contact" 
+                  path="contact" 
                   element={<Contact />} 
                 />
                 <Route 
-                  path="/resume" 
+                  path="resume" 
                   element={<Resume />} 
                 />
                 <Route 

@@ -60,7 +60,7 @@
 @media screen and (min-width: 1200px) {
    
     .intro-resume {
-        padding: 0 50px 0 280px;
+        padding: 0 50px 0 220px;
         text-align: left;
         font-size: 110%;
         align-items: flex-start;
@@ -73,7 +73,7 @@
     }
 
     .skills-container {
-        padding-left: 280px;
+        padding-left: 220px;
         align-items: flex-start;
     }
 
@@ -88,4 +88,15 @@
         width: 100px;
     }
 
+}
+
+@media screen and (min-width: 1600px) {
+
+    .intro-resume {
+        padding: 0 50px 0 280px;
+    }
+
+    .skills-container {
+        padding-left: 280px;
+    }
 }

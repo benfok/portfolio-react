@@ -52,7 +52,7 @@
 @media screen and (min-width: 1200px) {
 
     .about-cont {
-        padding: 20px 50px 0 280px;
+        padding: 20px 50px 0 220px;
         text-align: left;
         font-size: 110%;
     }
@@ -63,6 +63,14 @@
     
     .typed-h1 {
         height: 90px;
+    }
+
+}
+
+@media screen and (min-width: 1600px) {
+
+    .about-cont {
+        padding: 20px 50px 0 280px;
     }
 
 }

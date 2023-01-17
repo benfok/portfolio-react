@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, useEffect } from 'react';
 import '../styles/pageLayout.css';
 import useMedia from '../hooks/useMedia';
 import { IconContext } from 'react-icons';
@@ -9,7 +9,9 @@ import Tabs from '../components/Tabs';
 
 export default function Services() {
 
-  const isMobile = useMedia('(max-width: 998px)');
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="split-content">

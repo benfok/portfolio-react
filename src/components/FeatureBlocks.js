@@ -40,24 +40,7 @@ const FeatureBlocks = () => {
                         <h3>Project Management</h3>
                         <p className="f-copy">Planning, experienced leadership, comms and quality control across enterprise scale projects</p>
                         <Link
-                            to="/services"
-                            onClick={() => setCurrentPage('Services')}
-                            className="f-link"
-                        >
-                            Learn More
-                            <div className="f-link-border"></div>
-                        </Link>
-                    </div>
-                </div>
-                <div className="feature">
-                    <div className="f-icon-cont">
-                        <HiOutlinePencilAlt />
-                    </div>
-                    <div className="f-copy-cont">
-                        <h3>Copywriting</h3>
-                        <p className="f-copy">Copy for brand, optimized web content, technical docs or email marketing at your fingertips</p>
-                        <Link
-                            to="/services"
+                            to="/services/project-management"
                             onClick={() => setCurrentPage('Services')}
                             className="f-link"
                         >
@@ -74,7 +57,7 @@ const FeatureBlocks = () => {
                         <h3>Website Content</h3>
                         <p className="f-copy">1,000+ pages built or enchanced. Need help to revamp your site or drive a concept to execution?</p>
                         <Link
-                            to="/services"
+                            to="/services/content"
                             onClick={() => setCurrentPage('Services')}
                             className="f-link"
                         >
@@ -85,6 +68,24 @@ const FeatureBlocks = () => {
                     {/* Graphic Design
                     Auditing (ADA, SEO, QA, Responsiveness etc) */}
                 </div>
+                <div className="feature">
+                    <div className="f-icon-cont">
+                        <HiOutlinePencilAlt />
+                    </div>
+                    <div className="f-copy-cont">
+                        <h3>Copywriting</h3>
+                        <p className="f-copy">Copy for brand, optimized web content, technical docs or email marketing at your fingertips</p>
+                        <Link
+                            to="/services/copywriting"
+                            onClick={() => setCurrentPage('Services')}
+                            className="f-link"
+                        >
+                            Learn More
+                            <div className="f-link-border"></div>
+                        </Link>
+                    </div>
+                </div>
+
             </div>
         </section>
     )

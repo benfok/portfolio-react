@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { MdOutlineMarkEmailRead  } from 'react-icons/md';
 import { IconContext } from 'react-icons';
 import emailjs from '@emailjs/browser';
@@ -6,6 +6,12 @@ import '../styles/pageLayout.css';
 import '../styles/contact.css'
 
 export default function Contact() {
+
+  // scroll to the top of the page when the pahge is mounted - makes sure that links from lower scroll positions don't retain that scroll position
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   // form values
   const [formState, setFormState] = useState({});
   const [errorMessage, setErrorMessage] = useState(null); 

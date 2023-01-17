@@ -189,7 +189,7 @@ h3 {
 @media screen and (min-width: 1200px) {
    
     .portfolio-container {
-        padding-left: 280px;
+        padding-left: 220px;
     }
 
     .portfolio-intro {
@@ -222,7 +222,7 @@ h3 {
     }
 }
 
-@media screen and (min-width: 1700px) {
+@media screen and (min-width: 1600px) {
    
     .portfolio-container {
         padding-left: 250px;

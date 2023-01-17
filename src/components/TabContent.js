@@ -1,4 +1,4 @@
-import { React, useState } from 'react';
+import { React, useState, useEffect } from 'react';
 import { IconContext } from 'react-icons/lib';
 import { IoInformationCircleOutline } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
@@ -119,7 +119,7 @@ const TabContent = ({activeTab}) => {
 
     return (
         <section className="tab-content">
-            {activeTab === "projectManagement" && projectManagement}
+            {activeTab === "project-management" && projectManagement}
             {activeTab === "content" && content}
             {activeTab === "copywriting" && copywriting}
         </section>       
