@@ -121,7 +121,7 @@
     }
 
     .tab-content {
-        border-top: solid 3px var(--headerbg);
+        border-top: solid 3px var(--btnborder);
         width: 92%;
         background-color: var(--cardbg);
         box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);

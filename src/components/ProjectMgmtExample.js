@@ -2,7 +2,7 @@ import { React, useState } from 'react';
 import { IconContext } from 'react-icons/lib';
 import { BiWorld, BiLaugh } from 'react-icons/bi';
 import { RiTeamFill, RiCalendarCheckFill } from 'react-icons/ri';
-import { GrSystem } from 'react-icons/gr';
+import { BsGearFill } from 'react-icons/bs';
 import useMedia from '../hooks/useMedia';
 import '../styles/projectMgmtEx.css';
 
@@ -19,8 +19,8 @@ const ProjectMgmtExample = ({}) => {
         <section className={isMobile ? "pm-ex-cont pm-ex-cont-mobile" : "pm-ex-cont"}>
             <h3>Recent Projects</h3>
             <article className="project-ex">
-                <h4>Enterprise Product Launch | Vail Resorts</h4>
-                
+                {isMobile && <><h4>Enterprise Product Launch</h4><p>Client: Vail Resorts</p></>}
+                {!isMobile && <h4>Enterprise Product Launch  &nbsp;&nbsp;|&nbsp;&nbsp;  Vail Resorts</h4>}
                 <div className="pm-stats-cont">
                     <div className="pm-stat">
                         <span className="pm-stat-no">10,000+</span>
@@ -53,7 +53,7 @@ const ProjectMgmtExample = ({}) => {
                     </div>
                     <div className="pm-stat">
                         <div  className="pm-stat-no" >
-                            <GrSystem />
+                            <BsGearFill />
                             <span>8</span>
                         </div>
                         <p className="pm-stat-sub">Systems</p>
@@ -97,7 +97,8 @@ const ProjectMgmtExample = ({}) => {
                 </div>
             </article>
             <article className="project-ex">
-                <h4>Annual Season Pass Launch | Vail Resorts</h4>
+                {isMobile && <><h4>Annual Season Pass Launch</h4><p>Client: Vail Resorts</p></>}
+                {!isMobile && <h4>Annual Season Pass Launch &nbsp;&nbsp;|&nbsp;&nbsp; Vail Resorts</h4>}
                 
                 <div className="pm-stats-cont">
                     <div className="pm-stat">
