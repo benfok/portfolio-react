@@ -1,6 +1,6 @@
 
 import './App.css';
-import React from "react";
+import { React } from "react";
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -17,6 +17,7 @@ import { PageProvider } from './contexts/PageContext';
 
 
 function App() {
+
   return (
       <Router basename="/portfolio-react">
         <div id="react-content-container" className="container">

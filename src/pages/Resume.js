@@ -15,7 +15,7 @@ export default function Resume() {
   return (
     <div className="split-content">
       <div className="container-top">
-        <img src={resumePic} alt="About Picture" className="main-img"></img>
+        <img src={resumePic} alt="Black and white profile picture of Ben" className="main-img"></img>
       </div>
       <div className="container-bottom">
         <article className='intro-resume'>
@@ -44,5 +44,5 @@ export default function Resume() {
       </div>
     </div>
   );
-}
+};
 

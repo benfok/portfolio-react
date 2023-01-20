@@ -77,6 +77,15 @@
     width: 100%;
 }
 
+.f-hdr-link {
+    text-decoration: none;
+    color: var(--primaryfont)
+}
+
+.f-hdr-link:hover {
+    color: var(--navactive);
+}
+
 @media screen and (min-width: 480px) {
 
     .features-section {

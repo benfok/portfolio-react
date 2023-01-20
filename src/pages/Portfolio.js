@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, useEffect } from 'react';
 import '../styles/pageLayout.css';
 import '../styles/portfolio.css'
 import ProductCard from '../components/ProjectCard';
@@ -18,6 +18,11 @@ import ethelPic from '../images/ethel-portfolio3.png';
 import vailPic from '../images/vail-mock2.png';
 
 export default function Portfolio() {
+
+    // scroll to the top of the page when the page is mounted - makes sure that links from lower scroll positions don't retain that scroll position
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
 
   // leverage custom hook to determine media size for work section change
    const isWide = useMedia('(max-width: 1700px)');

@@ -81,7 +81,7 @@ const TabContent = ({activeTab}) => {
             <>
                 <h3>Copywriting</h3>
                     <p>
-                        Copywriting services, at your fingertips. Or your thumb tips... Depending on how you type your emails. Unless you're hands free. Hmmm. Here's what I got:
+                        Copywriting services, at your fingertips. Or your thumb tips... Depending on how you type your emails. Unless you're hands free. Hmmm. Let's just spell it out:
                     </p>
                     <div className="text-link" onClick={() => toggleCopyDefs()}>
                         <IconContext.Provider value={{ className: "i-icon" }}>

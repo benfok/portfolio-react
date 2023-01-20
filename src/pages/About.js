@@ -61,7 +61,7 @@ export default function About() {
   return (
       <div className="split-content">
         <div className="container-top">
-          <img src={aboutPic} alt="profile" className="main-img"></img>
+          <img src={aboutPic} alt="Profile picture of Ben" className="main-img"></img>
         </div>
         <div className="container-bottom">
           <section className='about-cont'>
