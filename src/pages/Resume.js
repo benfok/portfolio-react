@@ -25,7 +25,7 @@ export default function Resume() {
           <Button src={resume} text={'Resume'} />
         </article>
         <section className="skills-container">
-            <h2>My Skills</h2>
+            <h2>Technical Skills</h2>
             <div className="languages-container"> 
                 <LanguageIcon icon={<SiHtml5 />} text={'HTML 5'} />
                 <LanguageIcon icon={<SiCss3/>} text={'CSS 3'} />

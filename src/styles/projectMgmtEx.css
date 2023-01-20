@@ -12,10 +12,16 @@
 
 .project-ex {
     margin: 2rem 0 3rem 0;
+    padding: 0 10px 0 30px;
+    border-left: solid 1px var(--btnborder);
+}
+
+.project-ex-mobile {
+    margin: 2rem 0 3rem 0;
     padding: 0 10px;
 }
 
-.project-ex > h4::before {
+.project-ex-mobile > h4::before {
     content: "\005B";  /* \005B is the CSS Code/unicode for a bullet */
     color: var(--navactive);
     font-weight: bold; 
@@ -23,7 +29,7 @@
     width: 10px; 
 }
 
-.project-ex > h4::after {
+.project-ex-mobile > h4::after {
     content: "\005D";  /* \005B is the CSS Code/unicode for a bullet */
     color: var(--navactive);
     font-weight: bold; 

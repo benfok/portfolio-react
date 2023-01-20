@@ -9,12 +9,12 @@ const ProductCard = (props) => {
         <figure className="work-card">
             {project.live &&
                 <a href={project.liveLink} target="_blank" className="work-pic-container" rel="noreferrer">
-                    <img src={props.imageSrc} alt={project.title} className="work-pic" />
+                    <img src={props.imageSrc} alt={`Screenshot of ${project.title}`} className="work-pic" />
                 </a>
             }
             {!project.live &&
                 <div className="work-pic-container">
-                    <img src={props.imageSrc} alt={project.title} className="work-pic" />
+                    <img src={props.imageSrc} alt={`Screenshot of ${project.title}`} className="work-pic" />
                 </div>
             }
             <figcaption className="transparent">

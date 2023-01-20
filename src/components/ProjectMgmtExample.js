@@ -18,7 +18,7 @@ const ProjectMgmtExample = ({}) => {
     return (
         <section className={isMobile ? "pm-ex-cont pm-ex-cont-mobile" : "pm-ex-cont"}>
             <h3>Recent Projects</h3>
-            <article className="project-ex">
+            <article className={isMobile ? "project-ex-mobile" : "project-ex"}>
                 {isMobile && <><h4>Enterprise Product Launch</h4><p>Client: Vail Resorts</p></>}
                 {!isMobile && <h4>Enterprise Product Launch  &nbsp;&nbsp;|&nbsp;&nbsp;  Vail Resorts</h4>}
                 <div className="pm-stats-cont">
@@ -96,7 +96,7 @@ const ProjectMgmtExample = ({}) => {
                     <span className="text-link" onClick={() => setArticleFull1(!articleFull1)}>{!articleFull1 ? "Read More..." : "Read Less..." }</span>
                 </div>
             </article>
-            <article className="project-ex">
+            <article className={isMobile ? "project-ex-mobile" : "project-ex"}>
                 {isMobile && <><h4>Annual Season Pass Launch</h4><p>Client: Vail Resorts</p></>}
                 {!isMobile && <h4>Annual Season Pass Launch &nbsp;&nbsp;|&nbsp;&nbsp; Vail Resorts</h4>}
                 
