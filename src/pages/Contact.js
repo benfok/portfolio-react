@@ -72,7 +72,7 @@ export default function Contact() {
     <div className="split-content">
       <div className="container-top">
         <IconContext.Provider value={{ className: "main-icon main-img" }}>
-            <MdOutlineMarkEmailRead />
+            <MdOutlineMarkEmailRead title="Contact Me Email Icon" />
         </IconContext.Provider>
       </div>
       <div className="container-bottom">

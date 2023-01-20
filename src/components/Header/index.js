@@ -37,7 +37,7 @@ const Header = () => {
                     to="/about"
                     onClick={() => setCurrentPage('About')}
                 >
-                    <p id="logo">BF</p>
+                    <p id="logo" title="Ben Fok logo">BF</p>
                 </Link>
             </div>
             <div id="header-center">

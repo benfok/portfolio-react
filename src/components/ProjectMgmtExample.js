@@ -28,21 +28,21 @@ const ProjectMgmtExample = ({}) => {
                     </div>
                     <div className="pm-stat">
                         <div className="pm-stat-no">
-                            <RiCalendarCheckFill />
+                            <RiCalendarCheckFill title="Months" />
                             <span>6</span>
                         </div>
                         <p className="pm-stat-sub">Months</p>
                     </div>
                     <div className="pm-stat">
                         <div className="pm-stat-no">
-                            <BiWorld />
+                            <BiWorld title="Websites" />
                             <span>35</span>
                         </div>
                         <p className="pm-stat-sub">Websites</p>
                     </div>
                     <div className="pm-stat">
                         <div  className="pm-stat-no" >
-                            <RiTeamFill />
+                            <RiTeamFill title="Departments" />
                             <span>15+</span>
                         </div>
                         <p className="pm-stat-sub">Departments</p>
@@ -53,14 +53,14 @@ const ProjectMgmtExample = ({}) => {
                     </div>
                     <div className="pm-stat">
                         <div  className="pm-stat-no" >
-                            <BsGearFill />
+                            <BsGearFill title="Systems" />
                             <span>8</span>
                         </div>
                         <p className="pm-stat-sub">Systems</p>
                     </div>
                     <div className="pm-stat">
                         <div  className="pm-stat-no">
-                            <BiLaugh />
+                            <BiLaugh title="Jokes" />
                             <span>100+</span>
                         </div>
                         <p className="pm-stat-sub">Jokes Told</p>
@@ -103,21 +103,21 @@ const ProjectMgmtExample = ({}) => {
                 <div className="pm-stats-cont">
                     <div className="pm-stat">
                         <div className="pm-stat-no">
-                            <RiCalendarCheckFill />
+                            <RiCalendarCheckFill title="Week" />
                             <span>1</span>
                         </div>
                         <p className="pm-stat-sub">Week</p>
                     </div>
                     <div className="pm-stat">
                         <div className="pm-stat-no">
-                            <BiWorld />
+                            <BiWorld title="Webpages" />
                             <span>350+</span>
                         </div>
                         <p className="pm-stat-sub">Webpages</p>
                     </div>
                     <div className="pm-stat">
                         <div  className="pm-stat-no" >
-                            <RiTeamFill />
+                            <RiTeamFill title="Teams" />
                             <span>9</span>
                         </div>
                         <p className="pm-stat-sub">QA Teams</p>

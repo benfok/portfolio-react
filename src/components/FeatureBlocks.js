@@ -17,7 +17,7 @@ const FeatureBlocks = () => {
             <div className="features-cont">
                 <div className="feature">
                     <div className="f-icon-cont">
-                        <HiOutlineCode />
+                        <HiOutlineCode title="Web Application Development Services" />
                     </div>
                     <div className="f-copy-cont">
                         <h3>
@@ -42,7 +42,7 @@ const FeatureBlocks = () => {
                 </div>
                 <div className="feature">
                     <div className="f-icon-cont">
-                        <HiOutlinePresentationChartLine />
+                        <HiOutlinePresentationChartLine title="Project Management Services" />
                     </div>
                     <div className="f-copy-cont">
                         <h3>
@@ -67,7 +67,7 @@ const FeatureBlocks = () => {
                 </div>
                 <div className="feature">
                     <div className="f-icon-cont">
-                        <HiOutlineViewGrid />
+                        <HiOutlineViewGrid title="Website Design Services" />
                     </div>
                     <div className="f-copy-cont">
                         <h3>
@@ -94,7 +94,7 @@ const FeatureBlocks = () => {
                 </div>
                 <div className="feature">
                     <div className="f-icon-cont">
-                        <HiOutlinePencilAlt />
+                        <HiOutlinePencilAlt title="Copywriting Services" />
                     </div>
                     <div className="f-copy-cont">
                         <h3>

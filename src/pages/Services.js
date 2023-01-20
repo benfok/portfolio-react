@@ -22,7 +22,7 @@ const Services = () => {
     <div className="split-content">
       <div className="container-top">
         <IconContext.Provider value={{ className: "main-icon main-img" }}>
-            <FaHandsHelping />
+            <FaHandsHelping title="Helping Hands Services Icon" />
         </IconContext.Provider>
       </div>
       <div className="container-bottom">

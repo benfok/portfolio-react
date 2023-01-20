@@ -4,7 +4,7 @@ import { FaBars } from 'react-icons/fa';
 const MenuOpenButton = ({toggleMobileNav}) => {
     return (
         <a id="menu-icon" href="#" onClick={toggleMobileNav}>
-            <FaBars />
+            <FaBars title="Open Menu" />
         </a>
     )
 }

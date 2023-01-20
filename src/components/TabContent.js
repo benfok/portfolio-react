@@ -47,7 +47,7 @@ const TabContent = ({activeTab}) => {
                     </p>
                     <div className="text-link" onClick={() => toggleContentDefs()}>
                         <IconContext.Provider value={{ className: "i-icon" }}>
-                            <IoInformationCircleOutline />
+                            <IoInformationCircleOutline title="Information Icon" />
                         </IconContext.Provider>
                         {showContentDefinitions ? "Hide Definitions" : "Show Definitions"}
                     </div>
@@ -85,7 +85,7 @@ const TabContent = ({activeTab}) => {
                     </p>
                     <div className="text-link" onClick={() => toggleCopyDefs()}>
                         <IconContext.Provider value={{ className: "i-icon" }}>
-                            <IoInformationCircleOutline />
+                            <IoInformationCircleOutline title="Information Icon" />
                         </IconContext.Provider>
                         {showCopyDefinitions ? "Hide Definitions" : "Show Definitions"}
                     </div>

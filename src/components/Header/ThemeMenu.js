@@ -23,24 +23,24 @@ const ThemeMenu = () => {
             <div className="nav-theme" onClick={() => menuToggle()}>
                 <div className="theme-icon"   id="theme-icon">
                     <IconContext.Provider value={{ style: { verticalAlign: 'middle' }, size: '40px'}}>
-                        <MdColorLens />
+                        <MdColorLens title="Choose Site Theme" />
                     </IconContext.Provider>
                 </div>
             {isOpen && 
                 <div className="theme-menu">
                     <div id="" onClick={(event) => setTheme(event.currentTarget.id)}>
                         <IconContext.Provider value={{ className: "theme-menu-icon theme-def" }}>
-                            <BsCircleFill />
+                            <BsCircleFill title="Default Mode Selection" />
                         </IconContext.Provider>
                     </div>
                     <div id="bw-mode" onClick={(event) => setTheme(event.currentTarget.id)}>
                         <IconContext.Provider value={{ className: "theme-menu-icon theme-bw" }}>
-                            <BsCircleHalf />
+                            <BsCircleHalf title="Black and White Mode Selection" />
                         </IconContext.Provider>
                     </div>
                     <div id="dark-mode" onClick={(event) => setTheme(event.currentTarget.id)}>
                         <IconContext.Provider value={{ className: "theme-menu-icon theme-dark" }}>
-                            <GiMoon />
+                            <GiMoon title="Dark Mode Selection" />
                         </IconContext.Provider>
                     </div>
                 </div>

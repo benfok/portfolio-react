@@ -24,7 +24,7 @@ const ProductCard = (props) => {
                     {project.shortDescription}
                 </p>
                 <button onClick={showHideWorkDetails} className="card-icon">
-                  <FaChevronCircleDown />
+                  <FaChevronCircleDown title="Toggle More Details" desc="Icon to toggle whether more details are displayed or hidden for this project"/>
                 </button>
                 <div className="work-description">
                     {project.bulletDescription}

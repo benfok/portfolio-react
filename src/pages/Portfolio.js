@@ -31,7 +31,7 @@ export default function Portfolio() {
     <div className="split-content">
       <div className="container-top">
         <IconContext.Provider value={{ className: "main-icon main-img" }}>
-            <FaCode />
+            <FaCode title="Web Application Portfolio Code Icon" />
         </IconContext.Provider>
       </div>
       <div className="container-bottom">
