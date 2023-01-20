@@ -57,7 +57,7 @@ const TabContent = ({activeTab}) => {
                     <li>Adding/Configuring Plugins<br/>
                     <span className={showContentDefinitions ? "li-sub" : "li-sub hidden"}>The fancy things you can add through a CMS to give your site come cool functionality</span></li>
                     <li>ADA Compliance<br/>
-                    <span className={showContentDefinitions ? "li-sub" : "li-sub hidden"}>Does your site meets the requirements for disabled visitors?</span></li>
+                    <span className={showContentDefinitions ? "li-sub" : "li-sub hidden"}>Does your site meet accessibility requirements for those with disabilities?</span></li>
                     <li>Search Engine Optimization<br/>
                     <span className={showContentDefinitions ? "li-sub" : "li-sub hidden"}>Helping people and customers find your site</span></li>
                     <li>Mobile Responsiveness<br/>
