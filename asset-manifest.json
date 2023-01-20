@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.fc47373c.css",
-    "main.js": "/portfolio-react/static/js/main.d6e61b39.js",
-    "static/media/happy-place1.png": "/portfolio-react/static/media/happy-place1.c08c656cea945c6216bd.png",
-    "static/media/pubcrawler.png": "/portfolio-react/static/media/pubcrawler.b5ed389efbf6096f10f8.png",
-    "static/media/profile3bw.png": "/portfolio-react/static/media/profile3bw.4f9f8a242ff7e2ea515a.png",
-    "static/media/resume_FOK_221231.pdf": "/portfolio-react/static/media/resume_FOK_221231.1311961819d19feea463.pdf",
-    "static/media/profile1.jpg": "/portfolio-react/static/media/profile1.daeb20a25ee1846d7d38.jpg",
-    "static/media/weather-dashboard3.png": "/portfolio-react/static/media/weather-dashboard3.64060954fb4dc73b1afa.png",
-    "static/media/vail-mock2.png": "/portfolio-react/static/media/vail-mock2.a8d294d1bf7641050ff0.png",
-    "static/media/ethel-portfolio3.png": "/portfolio-react/static/media/ethel-portfolio3.2fcf6b230de16ff256e8.png",
-    "static/media/pnsaa.png": "/portfolio-react/static/media/pnsaa.c7f9255ccebb39163591.png",
-    "static/media/snowop.png": "/portfolio-react/static/media/snowop.4d07d834ad0929e0e07a.png",
-    "static/media/sierra3.png": "/portfolio-react/static/media/sierra3.6ccdd37a55435f79f455.png",
-    "static/media/code_quiz.png": "/portfolio-react/static/media/code_quiz.5dfe3f54c928f121bffe.png",
-    "static/media/text-editor.png": "/portfolio-react/static/media/text-editor.525822460304252e9873.png",
-    "static/media/tech-blog1.png": "/portfolio-react/static/media/tech-blog1.6d0da0cfb1431eecd947.png",
-    "index.html": "/portfolio-react/index.html",
-    "main.fc47373c.css.map": "/portfolio-react/static/css/main.fc47373c.css.map",
-    "main.d6e61b39.js.map": "/portfolio-react/static/js/main.d6e61b39.js.map"
+    "main.css": "/static/css/main.fc47373c.css",
+    "main.js": "/static/js/main.12fd7660.js",
+    "static/media/happy-place1.png": "/static/media/happy-place1.c08c656cea945c6216bd.png",
+    "static/media/pubcrawler.png": "/static/media/pubcrawler.b5ed389efbf6096f10f8.png",
+    "static/media/profile3bw.png": "/static/media/profile3bw.4f9f8a242ff7e2ea515a.png",
+    "static/media/resume_FOK_221231.pdf": "/static/media/resume_FOK_221231.1311961819d19feea463.pdf",
+    "static/media/profile1.jpg": "/static/media/profile1.daeb20a25ee1846d7d38.jpg",
+    "static/media/weather-dashboard3.png": "/static/media/weather-dashboard3.64060954fb4dc73b1afa.png",
+    "static/media/vail-mock2.png": "/static/media/vail-mock2.a8d294d1bf7641050ff0.png",
+    "static/media/ethel-portfolio3.png": "/static/media/ethel-portfolio3.2fcf6b230de16ff256e8.png",
+    "static/media/pnsaa.png": "/static/media/pnsaa.c7f9255ccebb39163591.png",
+    "static/media/snowop.png": "/static/media/snowop.4d07d834ad0929e0e07a.png",
+    "static/media/sierra3.png": "/static/media/sierra3.6ccdd37a55435f79f455.png",
+    "static/media/code_quiz.png": "/static/media/code_quiz.5dfe3f54c928f121bffe.png",
+    "static/media/text-editor.png": "/static/media/text-editor.525822460304252e9873.png",
+    "static/media/tech-blog1.png": "/static/media/tech-blog1.6d0da0cfb1431eecd947.png",
+    "index.html": "/index.html",
+    "main.fc47373c.css.map": "/static/css/main.fc47373c.css.map",
+    "main.12fd7660.js.map": "/static/js/main.12fd7660.js.map"
   },
   "entrypoints": [
     "static/css/main.fc47373c.css",
-    "static/js/main.d6e61b39.js"
+    "static/js/main.12fd7660.js"
   ]
 }
