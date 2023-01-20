@@ -1,7 +1,9 @@
 import { React, useState } from 'react';
 import { IconContext } from 'react-icons/lib';
 import { BiWorld, BiLaugh } from 'react-icons/bi';
-import { RiTeamFill, RiCalendarCheckFill } from 'react-icons/ri';
+import { GiJuggler } from 'react-icons/gi';
+import { GrPowerCycle } from 'react-icons/gr';
+import { RiTeamFill, RiCalendarEventFill, RiCheckboxMultipleFill } from 'react-icons/ri';
 import { BsGearFill } from 'react-icons/bs';
 import useMedia from '../hooks/useMedia';
 import '../styles/projectMgmtEx.css';
@@ -14,6 +16,7 @@ const ProjectMgmtExample = ({}) => {
 
    const [articleFull1, setArticleFull1 ] = useState(false);
    const [articleFull2, setArticleFull2 ] = useState(false);
+   const [articleFull3, setArticleFull3 ] = useState(false);
 
     return (
         <section className={isMobile ? "pm-ex-cont pm-ex-cont-mobile" : "pm-ex-cont"}>
@@ -28,7 +31,7 @@ const ProjectMgmtExample = ({}) => {
                     </div>
                     <div className="pm-stat">
                         <div className="pm-stat-no">
-                            <RiCalendarCheckFill title="Months" />
+                            <RiCalendarEventFill title="Months" />
                             <span>6</span>
                         </div>
                         <p className="pm-stat-sub">Months</p>
@@ -103,17 +106,17 @@ const ProjectMgmtExample = ({}) => {
                 <div className="pm-stats-cont">
                     <div className="pm-stat">
                         <div className="pm-stat-no">
-                            <RiCalendarCheckFill title="Week" />
-                            <span>1</span>
-                        </div>
-                        <p className="pm-stat-sub">Week</p>
-                    </div>
-                    <div className="pm-stat">
-                        <div className="pm-stat-no">
                             <BiWorld title="Webpages" />
                             <span>350+</span>
                         </div>
                         <p className="pm-stat-sub">Webpages</p>
+                    </div>
+                    <div className="pm-stat">
+                        <div className="pm-stat-no">
+                            <RiCalendarEventFill title="Week" />
+                            <span>1</span>
+                        </div>
+                        <p className="pm-stat-sub">Week</p>
                     </div>
                     <div className="pm-stat">
                         <div  className="pm-stat-no" >
@@ -138,6 +141,54 @@ const ProjectMgmtExample = ({}) => {
                         </div>
                     }
                     <span className="text-link" onClick={() => setArticleFull2(!articleFull2)}>{!articleFull2 ? "Read More..." : "Read Less..." }</span>
+                </div>
+            </article>
+            <article className={isMobile ? "project-ex-mobile" : "project-ex"}>
+                {isMobile && <><h4>Digital Experience Requests</h4><p>Client: Vail Resorts</p></>}
+                {!isMobile && <h4>Digital Experience Requests &nbsp;&nbsp;|&nbsp;&nbsp; Vail Resorts</h4>}
+                
+                <div className="pm-stats-cont">
+                    <div className="pm-stat">
+                        <div className="pm-stat-no">
+                            <RiCheckboxMultipleFill title="Issues Resolved" />
+                            <span>900+</span>
+                        </div>
+                        <p className="pm-stat-sub">Tickets Resolved</p>
+                    </div>
+                    <div className="pm-stat">
+                        <div className="pm-stat-no">
+                            <RiCalendarEventFill title="Months" />
+                            <span>7</span>
+                        </div>
+                        <p className="pm-stat-sub">Months</p>
+                    </div>
+                    <div className="pm-stat">
+                        <div className="pm-stat-no">
+                            <GrPowerCycle title="Efficiency" />
+                            <span>30%+</span>
+                        </div>
+                        <p className="pm-stat-sub">Improved Efficiency</p>
+                    </div>
+                    <div className="pm-stat">
+                        <div  className="pm-stat-no" >
+                            <GiJuggler title="Juggling Icon" />
+                            <span>20+</span>
+                        </div>
+                        <p className="pm-stat-sub">Projects Managed</p>
+                    </div>
+                </div>
+                <div className="pm-copy-cont">
+                    <p><strong>Brief: </strong>Revamp and manage the Digital Experience Team's issue resolution and project execution process. Make it more organized and efficient.</p>
+                    {articleFull3 && 
+                        <div className="pm-copy-ext">
+                            <p>The Digital Experience (DX) Team at Vail Resorts manages content updates across ~40 sites. Stakeholders submit tickets to the DX team when content needs to be adjusted or updated. The team also undertakes monthly projects to launch, remove, update, audit, enhance or fix site content in alignment with the company's annual operating cycle.</p>
+                            <p>I was hired as a temporary backfill for a Project Manager who was leaving the company and <strong>I was tasked</strong> with improving the ticket resolution process, from intake to prioritization to implementation, as well as managing the allocation of employee and third party resources across tickets and projects to ensure the team stayed on schedule.</p>
+                            <p>I lead the integration and training of a new intake system, optimized stakeholder facing content and implemented some more effective ways of communicating and working; resulting in average ticket resolution work times dropping by over 30% and hitting all key project milestones.</p>
+                            <p>One example of efficiency gains outside of managing the ticket system was when I was able to leverage my technical skills to create a custom dashboard that dynamically pulled data from a 3rd party system to provide status updates on a major project, replacing days worth of manual work done during the previous cycle.</p>
+                            <p>My temporary appointment became a 7 month contract and I continue to advise and assist the team on a temporary basis as needs arise.</p>
+                        </div>
+                    }
+                    <span className="text-link" onClick={() => setArticleFull3(!articleFull3)}>{!articleFull3 ? "Read More..." : "Read Less..." }</span>
                 </div>
             </article>
         </section>
