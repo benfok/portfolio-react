@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.72143509.css",
+    "main.css": "/portfolio-react/static/css/main.fc47373c.css",
     "main.js": "/portfolio-react/static/js/main.d6e61b39.js",
     "static/media/happy-place1.png": "/portfolio-react/static/media/happy-place1.c08c656cea945c6216bd.png",
     "static/media/pubcrawler.png": "/portfolio-react/static/media/pubcrawler.b5ed389efbf6096f10f8.png",
@@ -17,11 +17,11 @@
     "static/media/text-editor.png": "/portfolio-react/static/media/text-editor.525822460304252e9873.png",
     "static/media/tech-blog1.png": "/portfolio-react/static/media/tech-blog1.6d0da0cfb1431eecd947.png",
     "index.html": "/portfolio-react/index.html",
-    "main.72143509.css.map": "/portfolio-react/static/css/main.72143509.css.map",
+    "main.fc47373c.css.map": "/portfolio-react/static/css/main.fc47373c.css.map",
     "main.d6e61b39.js.map": "/portfolio-react/static/js/main.d6e61b39.js.map"
   },
   "entrypoints": [
-    "static/css/main.72143509.css",
+    "static/css/main.fc47373c.css",
     "static/js/main.d6e61b39.js"
   ]
 }
