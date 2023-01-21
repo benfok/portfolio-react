@@ -19,7 +19,7 @@ import { PageProvider } from './contexts/PageContext';
 function App() {
 
   return (
-      <Router basename="/portfolio-react">
+      <Router basename="/">
         <div id="react-content-container" className="container">
           <PageProvider>
             <Header />
