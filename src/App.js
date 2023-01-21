@@ -19,7 +19,7 @@ import { PageProvider } from './contexts/PageContext';
 function App() {
 
   return (
-      <Router basename="/">
+      <Router basename="/">  {/* was repo name, changed to / upon deployment to custom domain */}
         <div id="react-content-container" className="container">
           <PageProvider>
             <Header />
