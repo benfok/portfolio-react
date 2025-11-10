@@ -20,6 +20,9 @@ header {
     padding: 5px;
     vertical-align: middle;
     height: 50px;
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
 }
 
 #menu-icon:hover {

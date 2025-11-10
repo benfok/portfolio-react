@@ -16,7 +16,7 @@ const Services = () => {
 
   useEffect(() => {
     params.active_tab ? tabRef.current.scrollIntoView() : window.scrollTo(0,0); // if a tab name exists in the parameter scroll to it, otherwise scroll to page top
-  }, []);
+  }, [params]);
 
   return (
     <div className="split-content">

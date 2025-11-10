@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from 'react';
+import { useState } from 'react';
 import { IconContext } from 'react-icons/lib';
 import { IoInformationCircleOutline } from 'react-icons/io5';
 import { Link } from 'react-router-dom';

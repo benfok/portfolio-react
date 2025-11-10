@@ -1,5 +1,4 @@
-import { React, useState } from 'react';
-import { IconContext } from 'react-icons/lib';
+import { useState } from 'react';
 import { BiWorld, BiLaugh } from 'react-icons/bi';
 import { GiJuggler } from 'react-icons/gi';
 import { GrPowerCycle } from 'react-icons/gr';
@@ -9,7 +8,7 @@ import useMedia from '../hooks/useMedia';
 import '../styles/projectMgmtEx.css';
 
 
-const ProjectMgmtExample = ({}) => {
+const ProjectMgmtExample = () => {
 
     // leverage custom hook to determine screen size for container style
    const isMobile = useMedia('(max-width: 768px)');

@@ -3,9 +3,9 @@ import { FaTimes } from 'react-icons/fa';
 
 const MenuCloseButton = ({toggleMobileNav}) => {
     return (
-        <a id="menu-icon" href="#" onClick={toggleMobileNav}>
+        <button id="menu-icon" onClick={toggleMobileNav}>
             <FaTimes  title="Close Menu" />
-        </a>
+        </button>
     )
 }
 
