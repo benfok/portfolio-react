@@ -50,7 +50,7 @@ export default function Contact() {
   }
 
   const sendEmail = (e) => {
-    emailjs.send('gmail_smtp_bf8', 'portfolio_contact_form', formState, process.env.EMAILJS_PUBLIC_KEY)
+    emailjs.send('gmail_smtp_bf8', 'portfolio_contact_form', formState, 'FQxSplQWhDc1SvAFN')
       .then((result) => {
           // console.log(result.text);
           setEmailSent(true);
