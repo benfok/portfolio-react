@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { MdOutlineMarkEmailRead  } from 'react-icons/md';
 import { IconContext } from 'react-icons';
 import emailjs from '@emailjs/browser';
@@ -7,7 +7,7 @@ import '../styles/contact.css'
 
 export default function Contact() {
 
-  // scroll to the top of the page when the pahge is mounted - makes sure that links from lower scroll positions don't retain that scroll position
+  // scroll to the top of the page when the page is mounted - makes sure that links from lower scroll positions don't retain that scroll position
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -29,7 +29,7 @@ export default function Contact() {
     if (!formState.userName || formState.userName.length < 1 ) {
       setErrorMessage('Name is a required field')
       return false
-      } else if (!/^([a-zA-Z0-9.!#$%&*+=?^_{|}~/-]+)@([\w.-]+)\.([a-z.]{2,6})$/.test(formState.userEmail.trim())) {
+      } else if (!/^([a-zA-Z0-9.!#$%&*+=?^_{|}~/-]+)@([\w.-]+)\.([a-z.]{2,6})$/.test(formState.userEmail.toLowerCase().trim())) {
           setErrorMessage('Please enter a valid email address')
           return false
           } else if (!formState.message || formState.message.length < 1 ) {
@@ -50,7 +50,7 @@ export default function Contact() {
   }
 
   const sendEmail = (e) => {
-    emailjs.send('portfolio_contact', 'portfolio_contact_form', formState, 'UEMMMcF2PUIsCuUjT')
+    emailjs.send('gmail_smtp_bf8', 'portfolio_contact_form', formState, process.env.EMAILJS_PUBLIC_KEY)
       .then((result) => {
           // console.log(result.text);
           setEmailSent(true);
